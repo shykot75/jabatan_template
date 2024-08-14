@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:08:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="css/datepicker.css" rel="stylesheet">
+	<script src="js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrapValidator.min.css">
+    <script src="js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="js/main.js"></script> 
+    <script src="js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class="active"><a href="index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="employers/index.html">Overview</a></li>
+						<li class="register "><a href="employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="latest-news/news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="latest-news/announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper home">
+			
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+
+<style type="text/css">
+	
+.submit-button a {
+    background: #009bb5;
+    color: white;
+    text-decoration: none;
+    width: 85%;
+    display: block;
+    text-align: center;
+    padding: 4px 0px;
+    margin-top: 7px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+</style>
+
+	<div class="home-wrapper">
+		<div class="slide-wrapper">
+	        <div id="slider1_container">
+	            <!-- Slides Container -->
+	            <div class="slides" u="slides">
+	                <div>
+	                    <a href="latest-news/announcement/myxpats-centre-committed-to-strengthening-enforcement-oversight-of-expatriate-immigration-services/index.html" target="_blank"><img u="image" src="images/ESD_Banner9.jpg" /></a>
+	                </div>
+
+					<!--<div>
+	                    <a href="<#?php echo $baseurl; ?>pdf/TalentCorp-Press-Release-DPM-officially-opens-MYXpats-Centre-Final.pdf" target="_blank"><img u="image" src="images/banner5.jpg" /></a>
+	                </div>-->
+                    <!--
+                    <div>
+                    	<img u="image" src="images/esd_banner3.jpg" />
+                    </div>
+                    -->
+                    <!--
+	                <div>
+	                    <a href="latest-news/announcement/announcement-on-new-vdr-issuance-procedures/"><img u="image" src="images/banner2-02.jpg" /></a>
+	                </div>
+                    -->
+	                <div> 
+	                    <!-- <a href="https://esd.imi.gov.my/portal/pdf/TC-ESD-Quick-Guide-V3-September-2017.pdf" target="_blank"><img u="image" src="images/banner_guidebook.jpg" /></a> -->
+
+						<a href="pdf/ESD_Online_Guidebook_V4_2023(2024-1).pdf" target="_blank"><img u="image" src="images/ESD-Banner-Desktop.png" /></a>
+												
+	                </div>
+	                 
+	                 <div> 
+						<a href="https://www.youtube.com/watch?v=x9Wy2H6pK9g&amp;t=16s" target="_blank"><img u="image" src="images/ESD_Banner_15032022.jpg" /></a>					
+	                </div>
+	                 <div> 
+						<a href="https://youtu.be/9bc7LoHRI9c" target="_blank"><img u="image" src="images/XPats%20Gateway-Banner%20_Main-Video.png" /></a>					
+	                </div>
+	                 <div> 
+						<a href="https://youtu.be/BMzBh3gdfgY" target="_blank"><img u="image" src="images/XPats-Gateway-Banner%20_Tutorial-Video.png" /></a>					
+	                </div>
+	            </div>
+	            
+	            <!-- bullet navigator container -->
+	            <div u="navigator" class="jssorb05">
+	                <div u="prototype"></div>
+	            </div>
+	            
+	            <!-- Arrow Left/Right -->
+	            <!-- <span u="arrowleft" class="jssora11l" style="top: 123px; left: 8px;">
+	            </span>
+	            <span u="arrowright" class="jssora11r" style="top: 123px; right: 8px;">
+	            </span> -->
+	        </div>
+		</div>
+		<div class="home-content">
+			<div class="top top-left" style="display:block; ">
+				<div class="left">
+					<span class="left-line"></span>
+					<p>The Expatriate Services Division (ESD) is the first point of contact for companies who wish to employ eligible expatriates. All companies will need to register with the ESD as a first step. <a href="about-us/esd/index.html"> Read More</a><br> <br> 
+					The MYXpats Centre focuses on the processing of passes for individuals. <a href="expatriates/myxpats/index.html"> Read More</a></p> 
+				</div>
+			</div>
+
+
+			<div class="top top-open-day" style="display:block; ">
+				<div class="open-day" >
+				<div class="submit-button"  style="width:100px">
+					<p><h3 style="font-size:15px; margin-bottom:10px; margin-top:10px; margin-left:-10%">MYXpats<br> Open Day 2024 Registration</h3>
+					<a href="latest-news/announcement/myxpats-open-day-2024/registration.html"  style="margin-left:-10%"> Click Here</a></p> 
+				</div>
+				</div>
+			</div>
+			
+						<div class="top top-left nw-tp" style="display:block; width:50%; !important;">
+				<div class="left submit-button">
+				<div style="height:70px; !important; min-height: 30%; !important;"><h3>Check Application Status</h3></div>
+					<a href="application-status/index.html"> Click Here</a>
+				</div>
+			</div>
+			<div class="top top-right nw-tp" style="display:block; width:49%; !important;">
+				<div class="left submit-button">
+				<div style="height:70px; !important; min-height: 30%; !important;"><h3 class="xpats-align">Xpats Gateway</h3></div>
+					<a href="https://xpatsgateway.com.my/" target="_blank"> Click Here</a>
+				</div>
+			</div>
+						<div style="clear:both;"></div>
+			<div class="bottom">
+				<ul class="main">
+					                    <li class="one">
+						                        <h3>LATEST NEWS</h3>
+						<div class="line">line</div>
+                        						<div class="content">
+                        	<div class="date"><span>icon</span>01 August 2024</div>
+							<div class="sub-title">NEW APPLICATION FEATURES AND SERVICE FEE FOR EXPATRIATE EMPLOYMENT, DEPENDANT, AND PROFESSIONAL VISIT PASSES EFFECTIVE 01 SEPTEMBER 2024</div>
+							<p><p align="justify"> To better meet the needs of employers for expatriates, TalentCorp and its subsidiary MYXpats have introduced a comprehensive online data platform and service-oriented management system. This system aims to efficiently process expatriate-related applications, such as the Employment Pass (EP), the Professional Visit Pass (PVP) and their related passes, within a five-working-day period, in line with our client service commitment.</p> <br>...</p>
+							<a href="latest-news/announcement/announcement-231-new-application-features/index.html">READ MORE +</a>
+						</div>
+						<div class="img" style="background: url(images/home-bottom/two.png) Center center no-repeat;"></div>
+					</li>
+                    
+                                        <li class="two">
+						                        <h3></h3>
+						<div class=""></div>
+                        						<div class="content">
+                        	<div class="date"><span>icon</span>29 July 2024</div>
+							<div class="sub-title">OFFICIALLY LAUNCHED: EXPATRIATE SATELLITE CENTRE (ESC) AT TERMINAL 2 KUALA LUMPUR INTERNATIONAL AIRPORT (KLIA)</div>
+							<p><p align="justify"> We are pleased to announce that the Expatriate Satellite Centre KLIA Terminal 2 (ESC KLIA2) is now fully operational 24 hours a day, 7 days a week to facilitate the issuance of new Employment Passes, Professional Visit Passes, Dependant Passes, and the Residence Pass-Talent for expatriates.</p> <br>...</p>
+							<a href="latest-news/announcement/announcement-230-klia2-launched/index.html">READ MORE +</a>
+						</div>
+						<div class="img" style="background: url(images/home-bottom/ann_pic_03.jpg) Center center no-repeat;"></div>
+					</li>
+                    
+                                        <li class="three">
+						                        <h3></h3>
+						<div class=""></div>
+                        						<div class="content">
+                        	<div class="date"><span>icon</span>29 July 2024</div>
+							<div class="sub-title">GRADUAL DEPLOYMENT OF ONLINE SUB-PRODUCT SERVICES VIA ESD ONLINE</div>
+							<p><p align="justify"> We are pleased to announce that the next phase of redeployment has commenced for the online Shorten of Pass. The online service for Shorten of Pass is now available via ESD Online through the Sub-Product menu.</p> <br>...</p>
+							<a href="latest-news/announcement/announcement-229-gradual-deployment/index.html">READ MORE +</a>
+						</div>
+						<div class="img" style="background: url(images/home-bottom/three.png) Center center no-repeat;"></div>
+					</li>
+                    
+                    					<div style="clear: both;"></div>
+				</ul>
+                
+                <ul class="main" id="important_announcement" style="padding-top:10px;">
+					                    <li class="one">
+						                        <h3>IMPORTANT ANNOUNCEMENT</h3>
+						<div class="line">line</div>
+                        						
+
+						<div class="content">
+                        	<!--<div class="date"><span>icon</span><#?php echo date_format($date2,"d F Y");?></div>-->
+							<div class="sub-title" style="min-height:50px !important">NEW APPLICATION FEATURES AND SERVICE FEE FOR EXPATRIATE EMPLOYMENT, DEPENDANT, AND PROFESSIONAL VISIT PASSES EFFECTIVE 01 SEPTEMBER 2024</div>
+							<p><p align="justify"> To better meet the needs of employers for expatriates, TalentCorp and its subsidiary MYXpats have introduced a comprehensive online data platform and service-oriented management system. This system aims to efficiently process expatriate-related applications, such as the Employment Pass (EP), the Professional Visit Pass (PVP) and their related passes, within a five-working-day period, in line with our client service commitment.</p> <br>...</p>
+							<a href="latest-news/announcement/announcement-231-new-application-features/index.html">READ MORE +</a>
+						</div>
+					</li>
+                    
+                                        <li class="two">
+						                        <h3></h3>
+						<div class=""></div>
+                        						
+
+						<div class="content">
+                        	<!--<div class="date"><span>icon</span><#?php echo date_format($date2,"d F Y");?></div>-->
+							<div class="sub-title" style="min-height:50px !important">OFFICIALLY LAUNCHED: EXPATRIATE SATELLITE CENTRE (ESC) AT TERMINAL 2 KUALA LUMPUR INTERNATIONAL AIRPORT (KLIA)</div>
+							<p><p align="justify"> We are pleased to announce that the Expatriate Satellite Centre KLIA Terminal 2 (ESC KLIA2) is now fully operational 24 hours a day, 7 days a week to facilitate the issuance of new Employment Passes, Professional Visit Passes, Dependant Passes, and the Residence Pass-Talent for expatriates.</p> <br>...</p>
+							<a href="latest-news/announcement/announcement-230-klia2-launched/index.html">READ MORE +</a>
+						</div>
+					</li>
+                    
+                                        <li class="three">
+						                        <h3></h3>
+						<div class=""></div>
+                        						
+
+						<div class="content">
+                        	<!--<div class="date"><span>icon</span><#?php echo date_format($date2,"d F Y");?></div>-->
+							<div class="sub-title" style="min-height:50px !important">GRADUAL DEPLOYMENT OF ONLINE SUB-PRODUCT SERVICES VIA ESD ONLINE</div>
+							<p><p align="justify"> We are pleased to announce that the next phase of redeployment has commenced for the online Shorten of Pass. The online service for Shorten of Pass is now available via ESD Online through the Sub-Product menu.</p> <br>...</p>
+							<a href="latest-news/announcement/announcement-229-gradual-deployment/index.html">READ MORE +</a>
+						</div>
+					</li>
+                    
+                    					<div style="clear: both;"></div>
+				</ul>
+                
+                <ul class="main">
+					<li class="one">
+						<div class="download-wrapper">
+							<h3>VIDEO</h3>
+							<div class="line">line</div>
+							<h3></h3>
+							<div class=""></div>
+							<div class="play-content">
+								<ul>
+									<li>
+										<p class="pv"><span>How to paste the<br />endorsed Pass on to<br />the passport</span><a class= "pvs" href="https://www.youtube.com/watch?v=x9Wy2H6pK9g&amp;t=16s" target="_blank">Watch Video</a></p> 
+									</li>
+								</ul>
+							</div>
+						</div>
+						
+					</li>
+
+					<li class="two">
+						<div class="play-wrapper">
+							<h3></h3>
+							<div class=""></div>
+							<div class="play-content">
+								<ul>
+									<li>
+										<p class="xg"><span>Xpats Gateway : <br />An Overview<br />&nbsp;</span><a class= "pvs" href="https://youtu.be/9bc7LoHRI9c" target="_blank">Watch Video</a></p> 
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<li class="two">
+						<div class="play-wrapper">
+							<h3></h3>
+							<div class=""></div>
+							<div class="play-content">
+								<ul>
+									<li>
+										<p class="xg"><span>Getting Your Support Letter: A Comprehensive<br /> Tutorial</span><a class= "pvs" href="https://youtu.be/BMzBh3gdfgY" target="_blank">Watch Video</a></p> 
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					<div style="clear: both;"></div>
+				</ul>
+				<ul class="main" style = "margin-top:-5%">
+					<li class="one">
+						<div class="play-wrapper">
+							<div class="play-content">
+								<ul>
+									<li><p class="pv"><span>Endorsement at ESD Satellite Centre, <br /> KLIA1 & Pass Delivery</span><a class= "pvs" href="https://youtu.be/Vjt9LxQdfug" target="_blank">Watch Video</a></p>
+										
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					
+					<div style="clear: both;"></div>
+				</ul>
+                <ul class="main">
+					<li class="one">
+						<div class="download-wrapper">
+							<h3>DOWNLOAD</h3>
+							<div class="line">line</div>
+							<div class="download-content">
+								<ul>
+									<li>
+										<!-- <p class="gb"><span>ESD Online Guidebook V3.1 (effective 1st September 2017)</span><a href="https://esd.imi.gov.my/portal/pdf/TC-ESD-Quick-Guide-V3-September-2017.pdf" target="_blank">Download PDF</a></p> -->
+
+										<p class="gb"><span>ESD Online Guidebook V4 2023</span><a href="pdf/ESD_Online_Guidebook_V4_2023(2024-1).pdf" target="_blank">Download PDF</a></p>
+										
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+
+					<li class="two">
+						<div class="play-wrapper">
+							<h3></h3>
+							<div class=""></div>
+							<div class="download-content">
+								<ul>
+									<li>
+										<p class="xg"><span>Xpats Gateway <br /> User Manual</span><a href="pdf/xpats-gateway-manual.pdf" target="_blank">Download PDF</a></p> 
+									</li>
+								</ul>
+							</div>
+						</div>
+					</li>
+					
+					<div style="clear: both;"></div>
+				</ul>
+			</div>
+		</div>
+	</div><!-- End bottom-wrapper -->
+	
+	<!-- Modal -->
+    
+<!--    <div id="autopopup" class="modal fade" role="dialog">
+		 <div class="modal-dialog"> 
+<a href="https://esd.imi.gov.my/portal/latest-news/announcement/projection-ep-for-year-2023-opens-07oct2022/">
+			    <div class="modal-content" style="background-size: contain !important; background:url(https://esd.imi.gov.my/portal/images/Projection2023-Popup.jpg) top center no-repeat; background-color:#FFFFFF;  ">
+				     <button type="button" class="close" data-dismiss="modal">&times;</button>
+				     <div class="modal-body" style="padding:0;">   -->
+	
+                	<!--
+						esd-pop-up-october-20180928-open.jpg
+					<div class="list-date-wrapper text-left">
+						<div class="col-md-2">
+							<h5>Date</h5>
+						</div>
+						<div class="col-md-5">
+							<ul>
+								<li>Thurs, 14 Sept 2017 </li>
+								<li>Thurs, 12 Oct 2017</li>
+								<li>Thurs, 9 Nov 2017</li>
+							</ul>
+						</div>
+						<div class="col-md-5">
+							<ul>
+								<li>Thurs, 28 Sept 2017 </li>
+								<li>Wed, 25 Oct 2017</li>
+								<li>Thurs, 23 Nov 2017</li>
+							</ul> 
+						</div><div class="clearfix"></div>
+					</div>
+                    
+					<div class="text-center">
+						<a href="latest-news/announcement/myxpats-open-day/">click HERE to RSVP now!'</a><br />
+						<small>*First-come-first-served basis.</small>
+					</div>
+                    -->
+<!-- 	
+				</div>
+			</div>
+</a>
+		</div>
+	</div> -->
+
+	 			<div id="autopopup" class="modal fade" role="dialog">
+			<div class="modal-dialog"> 
+				<a href="latest-news/announcement/index.html">
+				<div class="modal-content" style="background:url(images/231.jpg) top center no-repeat; background-color:#FFFFFF; min-height:520px">  <!--For single announcement  -->
+				<!-- <div class="modal-content" style="background:url(images/) top center no-repeat; background-color:#FFFFFF; min-height:660px"> For double announcement, add 60px from total height canvas -->
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<div class="modal-body" style="padding:0;">
+					</div>
+				</div>
+				</a>
+			</div>
+		</div>
+	   
+
+
+
+	 <script>
+        jQuery(document).ready(function ($) {
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 2000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 800,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 12,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 4,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1,                                //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                    $Scale: false                                   //Scales bullets navigator or not while slider scale
+                }
+            };
+
+            //Make the element 'slider1_container' visible before initialize jssor slider.
+            $("#slider1_container").css("display", "block");
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth) {
+                    jssor_slider1.$ScaleWidth(parentWidth - 0);
+                }
+                else
+                    window.setTimeout(ScaleSlider, 50);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="active" href="index.html">Home</a></li>
+						<li><a class=""  href="about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="employers/index.html">Employers</a></li>
+						<li><a class="" href="expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="latest-news/news/index.html">Latest News</a></li>
+                        <li><a class="" href="faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:09:42 GMT -->
+</html>

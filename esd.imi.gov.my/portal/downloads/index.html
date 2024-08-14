@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/downloads/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:16:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../js/jquery.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../css/datepicker.css" rel="stylesheet">
+	<script src="../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/bootstrapValidator.min.css">
+    <script src="../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../js/main.js"></script> 
+    <script src="../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../latest-news/news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="../latest-news/announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="../faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../index.html" class="crumb" title="portal">portal</a><a href="index.html" class="crumb" title="downloads">downloads</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+<div class="downloadspage-wrapper page-content-wrapper">
+	<h2 class="title">Employment Pass/Dependant Pass/Long Term Social Visit Pass (LT-SVP)</h2>
+	<div class="line"></div>
+	<div class="content">
+		<div class="left">
+		<ul>
+			<li>
+				<h3>MyHelp Online Appointment Checklist</h3>
+				<a href="../pdf/MyHelpChecklist.pdf" target="_blank">MyHelp Checklist</a><br />
+			</li>
+			
+			<li>
+				<h3>Endorsement Form</h3>
+				<a href="../pdf/Payment-Form-v5.pdf" target="_blank">Payment Form</a><br />
+			</li>
+
+			<!--<li>
+				<h3>General Enquiry Form</h3>
+				<a href="<#?php echo $baseurl; ?>pdf/form-general-enquiry.pdf" target="_blank">Action Form</a><br />
+			</li>-->
+
+
+			<li>
+				<h3>Endorsement Checklist</h3>
+				<a href="../pdf/Endorsement_Checklist_(EP)_v1-2024.pdf" target="_blank">Employment Pass (EP)</a><br />
+				<a href="../pdf/Endorsement_Checklist_(PVP)_v1-2024.pdf" target="_blank">Professional Visit Pass (PVP)</a><br />
+			</li>
+
+			<li>
+				<h3>Transfer of Endorsement / Take Up Balance Checklist</h3>
+				<a href="../pdf/transfer-of-endorsement-checklist-v3.pdf" target="_blank">Transfer of Endorsement Checklist*</a><br />
+				<a href="../pdf/dp11-employment-pass-form.pdf" target="_blank">DP11 - Employment Pass Form</a><br />
+				<a href="../pdf/dp11a-dependant-pass-form.pdf" target="_blank">DP11A - Dependant Pass Form</a>
+				<br><br>
+                <small>
+                *Additional document for <strong>lost of passport</strong>: Applicant to request Original Statutory Declaration letter (Surat Akuan Sumpah) by Commission of Oath
+                </small>
+				
+			</li>
+			<li>
+				<h3>Pass Shorten/Cancellation Checklist</h3>
+				<a href="../pdf/shorten-pass-checklist-v3.pdf" target="_blank">Shorten/Cancel Pass Checklist (with physical passport)</a><br />
+				<a href="../pdf/shorten-pass-checklist-v4.pdf" target="_blank">Shorten/Cancel Pass Checklist (without physical passport)</a><br />
+				<a href="../pdf/dp11-employment-pass-form.pdf" target="_blank">DP11 - Employment Pass Form</a><br />
+				<a href="../pdf/dp11a-dependant-pass-form.pdf" target="_blank">DP11A - Dependant Pass Form</a>
+				<br /><br />
+                <small>
+
+				*Cancellation of pass without a physical passport need to be submitted at Inspectorate Unit, Putrajaya <strong>ONLY</strong>
+				
+				</small>
+			</li>
+			<li>
+				<h3>Special Pass Checklist</h3>
+				<a href="../pdf/special-pass-checklist-v2.pdf" target="_blank">Special Pass Checklist</a><br />
+				<a href="../pdf/format-a-form.pdf" target="_blank">Format A Form</a><br />
+				<a href="../pdf/dp11-employment-pass-form.pdf" target="_blank">DP11 - Employment Pass Form</a><br />
+				<a href="../pdf/dp11a-dependant-pass-form.pdf" target="_blank">DP11A - Dependant Pass Form</a>
+			</li>
+			<!--<li>
+				<h3>I-Kad Application for Employment Pass holder</h3>
+				<a href="<#?php echo $baseurl; ?>pdf/ikad-checklist.pdf" target="_blank">I-kad Checklist</a><br />
+				<a href="<#?php echo $baseurl; ?>pdf/ikad-application-form-v3.pdf" target="_blank">I-kad Application Form</a>
+			</li>-->
+			<li>
+				<h3>Appeal Checklist - First Appeal <br /> (Submission at MYXpats Centre ONLY)</h3>
+				<a href="../pdf/appeal-checklist-employment-pass-professional-visit-pass-v5.pdf" target="_blank">Appeal Checklist - Employment Pass & Professional Visit Pass</a><br />
+				<!--<a href="<#?php echo $baseurl; ?>pdf/appeal-checklist-professional-visit-pass-v2.pdf" target="_blank">Appeal Checklist - Professional Visit Pass</a>-->
+			</li>
+			<li>
+				<h3>Amendment of the Letter of Undertaking</h3>
+				<a href="../pdf/letter-of-undertaking-checklist-v4.pdf" target="_blank">Letter of Undertaking Checklist</a><br />
+				<a href="../pdf/letter-of-undertaking-sample.pdf" target="_blank">Letter of Undertaking Sample</a><br/>
+				<a href="../pdf/lou-ipta.pdf" target="_blank">Letter of Undertaking Sample - For IPTA Government Agency</a>
+			</li>
+			<li>
+				<h3>Permission to Study</h3>
+				<a href="../pdf/permission-to-study-employment-pass-esd-putrajaya-v3.pdf" target="_blank">Permission to Study - Employment Pass (Submission at ESD, Putrajaya ONLY)*</a><br />
+				<a href="../pdf/permission-to-study-dependent-pass-myxpats-v3.pdf" target="_blank">Permission to Study - Dependant Pass** </a><br />
+				<a href="../pdf/permission-to-study-form.pdf" target="_blank">Permission to Study Form</a><br />
+				<a href="../pdf/student-personal-data-form.pdf" target="_blank">Student Personal Data Form</a><br />
+				<a href="../pdf/dp11-employment-pass-form-v2.pdf" target="_blank">DP11 – Employment Pass Form</a> <br />
+				<a href="../pdf/dp11a-dependant-pass-form-v2.pdf" target="_blank">DP11A - Dependant Pass Form</a>
+				<br /><br />
+
+				<small>
+					<strong style="font-family: Helvetica Neue ,Helvetica,Arial,sans-serif;">Additional Information/Document </strong><br />
+					<strong style="font-family: Helvetica Neue ,Helvetica,Arial,sans-serif;">* Permission to Study (Employment Pass)</strong> - Please ensure the cover letter is stating the company has ‘<strong style="font-family: Helvetica Neue ,Helvetica,Arial,sans-serif;">no objection</strong>’ for the expatriate to study during his employment in Malaysia. <br />
+
+					<strong style="font-family: Helvetica Neue ,Helvetica,Arial,sans-serif;">** Permission to Study (Dependant Pass )</strong> -  additional documents required:- <br />
+
+					i) Permission to Study Form (To attach passport size photo) <br /> 
+
+					ii) Student Personal Data Form   <br />
+				</small> 
+
+<!-- 				<small>
+					* Please ensure that the cover letter state the company have ‘no objection’ for the expatriate to study. <br />
+
+					** Additional documents such as the Permission to Study Form with photo and Student Personal Data Form is required.</small> -->
+			</li>
+			<li>
+				<h3>Permission to Work at Second Location <br /> (Submission at ESD, Putrajaya ONLY)</h3>
+				<!--<a href="<#?php echo $baseurl; ?>pdf/permission-to-study-dp.pdf" target="_blank">Permission to Study - Dependent Pass</a><br />-->
+				
+				<a href="../pdf/permission-to-work-at-second-location-checklist-v3.pdf" target="_blank">Permission to Work at Second Location Checklist</a><br />
+                <a href="../pdf/dp11-employment-pass-form.pdf" target="_blank">DP11 – Employment Pass Form</a>
+			</li>
+		</ul>
+		</div>
+		<div class="right">
+			<div class="up">
+				<ul>
+					<li>
+						<h3>Guidebook</h3>
+						<a href="../pdf/ESD_Online_Guidebook_V4_2023(2024-1).pdf" target="_blank">ESD Online Guidebook V4 2023</a><br>
+						<a href="../pdf/guidebook-svp.pdf" target="_blank">Social Visit Pass - Internship (SVP-i)</a><br />
+						<a href="../pdf/ESC_KLIA_Infographic_2024.pdf" target="_blank">ESC KLIA Infographic</a><br />
+			
+
+						
+						<!-- <a href="<#?php echo $baseurl; ?>pdf/tc-esd-quick-guide-v3-january-2018.pdf" target="_blank">ESD Online Guidebook V3.1 (effective 1st September 2017)</a> -->
+						<!-- <a href="<#?php echo $baseurl; ?>pdf/TC-ESD-Quick-Guide-V3-September-2017.pdf" target="_blank">ESD Online Guidebook V3.1 (effective 1st September 2017)</a> -->
+					</li>
+					
+					<li>
+						<h3>Manual</h3>
+						<a href="../pdf/ssm-user-manual-v6.0.pdf" target="_blank">SSM User Manual v6.0</a><br>
+						<a href="../pdf/Online_Endorsement_User_Manual_2024.pdf" target="_blank">Online Endorsement User Manual</a>
+					</li>
+				</ul>
+			</div>
+			<div class="bottom">
+				<ul>
+				<li>
+						<h3>Sample</h3>
+						<a href="../pdf/sample-cover-letter-general.pdf" target="_blank">Cover Letter (General)</a><br />
+						<a href="../pdf/sample-cover-letter-shorten.pdf" target="_blank">Cover Letter (Shorten)</a><br />
+						<a href="../pdf/authorization-letter-v2.pdf" target="_blank">Authorization Letter</a><br />
+						<!-- <a href="<#?php echo $baseurl; ?>pdf/sample-of-application-letter-v2.pdf" target="_blank">Application Letter for Dependant Pass/Long Term Social Visit Pass</a> -->
+						<a href="../pdf/sample-of-application-letter-dp-v2.pdf" target="_blank">Application Letter for Dependant Pass/Long Term Social Visit Pass</a>
+					</li>
+				<li>
+						<h3>Maid</h3>
+					<small>Please refer to ESD, Putrajaya for the process and checklist</small>	
+
+					</li>
+				<li>
+						<h3>FORM</h3>
+						<a href="../pdf/im-12-form-v2.pdf" target="_blank">IM12</a><br />
+					
+						<a href="../pdf/ESD_refund_request_form_V2_2024.pdf" target="_blank">Refund Request Form</a><br />
+						<a href="../pdf/ESD_refund_request_form_(Rejected_Application)_V2_2024.pdf" target="_blank">Refund Request Form (Rejected Application)</a><br />
+						<a href="../pdf/TEMPLATE-SURAT-PENGESAHAN-STATUS-DAN-KETULINAN-EPASS-(002).docx" target="_blank">ePass Validation Letter</a><br />
+					</li>
+					<!-- <li>
+						<h3>Maid</h3>
+						<a href="<#?php echo $baseurl; ?>pdf/maid-application-for-rp-t-checklist-v2.pdf" target="_blank">Maid Application</a><br />
+					</li> -->
+					<li>		
+						<h3>Endorsement Payment Advice</h3>
+						<a href="../pdf/payment-table-v12.pdf" target="_blank">Payment Table</a><br />
+						<!-- <a href="<#?php echo $baseurl; ?>pdf/payment-table-20170717.pdf" target="_blank">Payment Table</a><br /> -->
+					</li>
+					
+					<li>
+						<h3>Visa</h3>
+						<a href="../pdf/visacharges-rates-v2.pdf" target="_blank">Visa Charges</a><br />
+					</li>
+
+					<li>
+						<h3>Personal Bond</h3>
+						<a href="../pdf/personal-bond-form-v2.pdf" target="_blank">Personal Bond Form</a><br />
+						<!-- <a href="<#?php echo $baseurl; ?>pdf/personal-security-bond-rates-v3.pdf" target="_blank">Personal & Security Bond Rates</a> -->
+						<a href="../pdf/personal-security-bond-rates-v5.pdf" target="_blank">Personal & Security Bond Rates</a>
+						
+					</li>
+					<li>
+						<h3>Security Bond Form</h3>
+						<!-- <a href="<#?php echo $baseurl; ?>pdf/security-bond-form.pdf" target="_blank">Security Bond Form</a><br /> -->
+						<!-- <a href="<#?php echo $baseurl; ?>pdf/personal-security-bond-rates-v3.pdf" target="_blank">Personal & Security Bond Rates</a> -->
+						<a href="../pdf/sample-of-security-bond-v5.pdf" target="_blank">Security Bond Form</a><br />
+						<a href="../pdf/personal-security-bond-rates-v5.pdf" target="_blank">Personal & Security Bond Rates</a>
+					</li>
+				</ul>
+			</div>
+		</div><div class="clearfix"></div>
+	</div>
+</div>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../index.html">Home</a></li>
+						<li><a class=""  href="../about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="../employers/index.html">Employers</a></li>
+						<li><a class="" href="../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../latest-news/news/index.html">Latest News</a></li>
+                        <li><a class="" href="../faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/downloads/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:20:14 GMT -->
+</html>
+

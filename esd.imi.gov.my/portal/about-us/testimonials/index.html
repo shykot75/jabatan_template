@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/about-us/testimonials/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:20:21 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../../css/datepicker.css" rel="stylesheet">
+	<script src="../../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrapValidator.min.css">
+    <script src="../../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../../js/main.js"></script> 
+    <script src="../../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../latest-news/news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="../../latest-news/announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../../faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../../faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../../faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="../../faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="../../downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../../index.html" class="crumb" title="portal">portal</a><a href="../index.html" class="crumb" title="about-us">about-us</a><a href="index.html" class="crumb" title="testimonials">testimonials</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+<div class="testimonial-wrapper page-content-wrapper">
+	<h2 class="title">TESTIMONIALS</h2>
+	<div class="line"></div>
+	<div class="content">
+		<div class="left">
+			<ul id="myList"> 
+				<li>
+					<div class="person-detail">
+						<div class="img james-thompson"></div>
+						<h4>James Thompson III</h4>
+						<small>Resident Pass –<br />Talent Programme (RP-T)</small>
+					</div>
+					<div class="desc">
+						<p class="highlight">“The best thing about the Resident Pass-Talent programme is the 10-year pass makes it a lot more attractive for me to want to work and stay here. In other countries, it is unheard of for a foreigner to get that sort of duration. This shows that Malaysia genuinely wants to attract foreign talent to come here.”</p>
+						<p>James Thompson III is a true global citizen. Born in Yokohama and raised in Hong Kong, James has spent a large portion of his life in Asia. “My parents are American, they came to Asia in the 1960s and never went back,” said James, who spent the last 19 years working in China. Now in Malaysia, he is set to spearhead Crown Worldwide’s long-term development in the country as their new Managing Director.</p>
+						<p>“Malaysia has always been one of the key markets for Crown Worldwide and I’m here specifically to oversee the expansion of our business. We’ve been here for over 40 years and we’re well established with facilities in Shah Alam, Penang, Bandar Enstek in Negeri Sembilan, and soon, in Johor as well.”</p>		
+						<p>When comparing Malaysia to his last posting, in China, James admits that life here is slower, but the trade-off is the lifestyle. “From a family perspective, the overall standard of living here is higher than what we had,” he explained. “Malaysia has some of the friendliest people and it’s blessed with nice weather and a good business environment.”</p>	
+						<p>In terms of talent, James rates the level of talent in Malaysia as good as Malaysians have a global mindset, are well-educated and multi-lingual. He also finds it unique that Malaysians generally view the world from a more international perspective, calling these “qualities specific to a multicultural environment with a westernised education system.”</p>
+						<p>*Extracted from Going Places, October 2014 issue</p>						
+					</div>
+					<div style="clear: both;"></div>
+				</li>
+				<li>
+					<div class="person-detail">
+						<div class="img alois-hofbauer"></div>
+						<h4>Alois Hofbauer</h4>
+						<small>Resident Pass –<br /> Talent Programme (RP-T)</small>
+					</div>
+					<div class="desc">
+						<p class="highlight">“When you take into consideration the fact that Malaysia is competing with so many other places in the region such as Singapore, Thailand and Hong Kong, TalentCorp definitely gives the country a competitive edge, not to mention greater visibility. It makes it easier for high-calibre professional expatriate talent to settle into life here by taking away complications that you might experience such as applying for visas or renewing work permits—it’s a burden off your shoulders!”</p>	
+						<p>Even though I started my career with Nestle in Austria 24 years ago, I’ve actually spent 20 years of my professional life in Asia. My first posting was in Hong Kong, but I was eventually moved to Tianjin and Beijing in China, as well as Taipei. In 2010, I was transferred to the other side of Asia: Sri Lanka. Having been in so many different places across the region, I see more commonalities between the nations instead of differences. Have you heard of that famous song, ‘Yesterday Once More’? It relays a sense of nostalgia that the world used to be a better place in the past, which I think is a prevalent feeling in many European markets.</p>			
+						<p>In Asia, however, the focus is on the future; there’s a firm belief that tomorrow will be a better day. That’s what I enjoy; the positive outlook towards the future, and the constant drive to improve and create something better. I’ve witnessed this particular trait across all the places I’ve been in Asia, and now in Malaysia too, which I enjoy a lot.</p>	
+						<p>The main challenge when you are a foreigner in any country is settling in. How do you merge with the new environment? After living in several places around Asia, I actually found settling into Malaysia relatively easy. Kuala Lumpur is a truly international city that is not lacking of anything. English is widely spoken, which makes it easy to get by in the beginning. The supermarkets even carry foreign products in addition to local items, and schooling for your children is fantastic too.</p>	
+						<p>Like most metropolises, Kuala Lumpur is constantly on the go, 24 hours a day. I didn’t grow up in a big city, but I like the city lifestyle. There’s always something going on, something new to discover—life never stops in Kuala Lumpur. The city’s developing rapidly and you see signs of progress like new buildings coming up everywhere. It’s refreshing compared to Europe, where the rate of development and change is set at a much lower pace.</p>			
+						<p>*Extracted from Expatriate Lifestyle, April 2014 issue</p>						
+					</div>	
+					<div style="clear: both;"></div>				
+				</li>
+				<li>
+					<div class="person-detail">
+						<div class="img john-miller"></div>
+						<h4>John Miller</h4>
+						<small>Residence Pass - <br />Talent programme (RP-T)</small>
+					</div>
+					<div class="desc">
+						<p class="highlight">“The Residence Pass provides options, flexibility and stability that did not exist before.”</p>	
+						<p>John Miller is the Chief Executive Officer at iPerintis Sdn Bhd. He moved to Malaysia with his family from United Kingdom in 2008. He has found Malaysia to be an exciting place to live and work, with a potential that looks to blossom in the coming years.</p>
+						<p>“The Government has a vision and has set some tough goals to be delivered via the Economic Transformation Programme. I personally look forward to contributing to Malaysia’s development and future success,” says Miller, adding that he is grateful for the opportunity.</p>
+						<p>Miller is a holder of the Residence Pass and feels that it’s a very positive step towards the right direction, especially for expatriates. “It allows us as a family to plan for the longer term about very important things, such as education for the children. It also has significant influence on whether or not we should invest in a home or continue to rent.”</p>
+						<p>In conclusion, Miller states that the Residence Pass is a great initiative as it provides “options, flexibility and stability that did not exist before.”</p>
+					</div>	
+					<div style="clear: both;"></div>				
+				</li>
+				<li>
+					<div class="person-detail">
+						<div class="img ashok-ramamurthy"></div>
+						<h4>Ashok Ramamurthy</h4>
+						<small>Residence Pass - <br />Talent programme (RP-T)</small>
+					</div>
+					<div class="desc">
+						<p class="highlight">“Malaysia is an excellent talent destination.”</p>	
+						<p>Ashok Ramamurthy, an Australian, moved to Malaysia 5 years ago and his experience in this country has been nothing but positive. A self-described global citizen, Mr. Ashok thinks Malaysians are some of the friendliest and most welcoming in the world. He is also impressed with the city’s infrastructure “Except during peak hours, or when it rains and the city is gridlocked,” he admits, sounding thoroughly Malaysian! and, naturally, the food. “It is awesome in variety and not too expensive,” he says.</p>
+						<p>He does have some constructive criticism that could help better the country. He believes that English as the language of communication in schools must be embraced across the board if the country plans to be competitive in the global market. Further on the subject of education, Ashok Ramamurthy feels strongly that standards must be maintained at the highest levels without any affirmative bias, and that employment opportunities should be provided without bias.</p>
+						<p>When it comes to attracting and retaining the best talents, Malaysia is on the right path but more can and will be done. “Malaysia is an excellent talent destination. The government, under the current Prime Minister, is pursuing a transformation programme that is strategic with clear milestones. Under the Economic Transformation Programme, Malaysia will continue towards becoming a first-world country with improving education standards and progressive global institutions setting up shop in the country.”</p>
+					</div>	
+					<div style="clear: both;"></div>				
+				</li>
+				<li>
+					<div class="person-detail">
+						<div class="img tourres"></div>
+						<h4>Dr. Marie-Aimée Tourres</h4>
+						<small>Residence Pass - <br />Talent programme (RP-T)</small>
+					</div>
+					<div class="desc">
+						<p class="highlight">“Finally, an available option that could make my stay here easier for me and also the employer.”</p>	
+						<p>Dr. Marie’s first visit to Malaysia was in 1990. In the short time that she was here, she had a feeling that Malaysia would grow to become something special to her. And she was right! She eventually picked up development economics in university and when she was offered a full-time PhD scholarship in 1996, she decided with little hesitation to focus her research on Malaysia. She returned again in 1999 for another project, and hasn’t looked back since.</p>	
+						<p>She has been in Malaysia for 13 years now and has worked with 3 employers in total. At first, Dr. Marie found it difficult being an expatriate here. “My local contract could never exceed 2 years. At each renewal, administrative papers had to be done all over again. Even though I was greatly helped by the respective Human Resource department, it was still a hassle to go through,” she explains. She also could not apply for a Permanent Resident status as she did not have enough points to qualify. So when Dr. Marie found out about the Residence Pass-Talent programme, she thought of it as the long-awaited answer to her problem. “Finally, an available option that could make my stay here easier for me and also the employer!”</p>	
+						<p>Although she admits that she has had to adapt to the different work culture and environment in Malaysia, she thoroughly enjoys all that Malaysia has to offer. She enjoys meeting Malaysians from all walks of life. She says, “They (Malaysians) are nice people with a good heart, and are always here to help you.” She also enjoys the mix of culture here and how that mix influences everything from food to clothing.</p>	
+						<p>For all the enrichment that Malaysia has brought to her life, Dr. Marie hopes to contribute to the country through her work as a Senior Research Fellow at Universiti Malaya. She hopes to inspire her students to believe in what they are doing and get them excited about contributing to the world. She also participates in important conferences and brain-storming, all helping with the development of Malaysia. “We are indeed not yet there, but it is not only the end result which matters. It is also the process which leads us there that is important, if not the most important.”</p>								
+					</div>	
+					<div style="clear: both;"></div>				
+				</li>
+			</ul>
+			<button id="loadMore" class="show-more">Show more</button>
+		</div>
+		<div class="right">
+			<h3>F.A.Q</h3>
+			<div class="line"></div> 
+			<div class="faq-banner">
+				  <p><b>Q:<br />Why do I need to go to ESD? </b></p><br />
+				  <p>A:<br />To channel submission of all expatriate related application as it is a reliable decision support system.</p>
+			 	  <a href="../../faq/index.html">read more +</a>
+			</div>
+			<div class="backtop-desktop" style="display: ;">
+				<a href="#0" class="cd-top">Back Top</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>
+</div>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../../index.html">Home</a></li>
+						<li><a class="active"  href="../esd/index.html">About Us</a></li>
+						<li><a class="" href="../../employers/index.html">Employers</a></li>
+						<li><a class="" href="../../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../../latest-news/news/index.html">Latest News</a></li>
+                        <li><a class="" href="../../faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/about-us/testimonials/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:20:21 GMT -->
+</html>

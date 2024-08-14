@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2022/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:20:37 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../../css/datepicker.css" rel="stylesheet">
+	<script src="../../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrapValidator.min.css">
+    <script src="../../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../../js/main.js"></script> 
+    <script src="../../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../../about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="../announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../../faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../../faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../../faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="../../faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="../../downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../../index.html" class="crumb" title="portal">portal</a><a href="../index.html" class="crumb" title="latest-news">latest-news</a><a href="index.html" class="crumb" title="announcement-2022">announcement-2022</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+<div class="announcement-wrapper page-content-wrapper news">
+	<h2 class="title">announcement</h2>
+	<div class="line"></div>
+	<div class="content">
+		<div class="left">
+			<div class="year-filter">
+				<select name="annyear" onChange="window.document.location.href=this.options[this.selectedIndex].value;" >
+					<option value="../announcement/index.html">2024</option>
+					<option value="../announcement-2023/index.html">2023</option>
+					<option value="https://esd.imi.gov.my/portal/latest-news/announcement-2022/" selected="selected">2022</option>
+					<option value="../announcement-2021/index.html">2021</option>
+					<option value="../announcement-2020/index.html">2020</option>
+					<option value="../announcement-2019/index.html">2019</option>
+                	<option value="../announcement-2018/index.html">2018</option>
+                	<option value="../announcement-2017/index.html">2017</option>
+                	<option value="../announcement-2016/index.html">2016</option>
+				  <option value="../announcement-2015/index.html">2015</option>
+				  <!-- <option value="2014">2014</option>
+				  <option value="2013">2013</option> -->
+				</select>
+			</div>
+			<ul class="list-wraper">
+                            <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">e-GATE FACILITY EXTENSION</h1>
+                        <p>29 November 2022</p>
+						<p><p align="justify">The Immigration Department of Malaysia (JIM) has innovated in managing expatriate entry by allowing Long-Term Pass holders to use the e-Gate facility, which was previously only available to Malaysian citizens.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="e-gate-facility-extension-2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">PROJECTION OF EXPATRIATES FOR THE YEAR OF 2022 WILL BE CLOSED ON 2 DECEMBER 2022</h1>
+                        <p>17 November 2022</p>
+						<p><p align="justify">We refer to the <a href="projection-ep-for-year-2023-opens-07oct2022/index.html">
+announcement</a> made on 6 October 2022 on projection of expatriates. Please be informed that the <b>last date to submit projection</b> 
+of expatriates for the year of 2022 is <b>2 December 2022</b>.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-projection-closed-2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">INTRODUCTION OF ELECTRONIC PASS (ePASS) FOR RENEWAL OF EMPLOYMENT PASS AND ITS RELATED PASSES</h1>
+                        <p>14 November 2022</p>
+						<p>In line with the Government's aspiration towards digitalisation, effective 1 December 2022, the Immigration Department of Malaysia is 
+pleased to introduce a new featured document known as the ePASS for Employment Pass and its related passes for RENEWAL purposes. 
+The company assigned may sign into the ESD Online System (esd.imi.gov.my) to download the said Employment Pass and its related passes as an 
+ePASS.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-epass-briefing-2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NEW FACILITY IMPLEMENTATION: PERMISSION TO WORK FOR FOREIGN PROFESSIONALS WITH SOCIAL VISIT PASS (PLS@XPATS)</h1>
+                        <p>31 October 2022</p>
+						<p>We refer to the announcement made by the Immigration Department of Malaysia (JIM) dated 3 October 2022 (Monday); JIM implemented a new facility for foreign professionals to apply to Work with maximum of (30) days Social Visit Pass (PLS@XPATS) from the date of arrival to Malaysia.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="new-facility-implementation-pls-xpats/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE OF CREDIT CARD PAYMENT DISRUPTION FOR ESD ONLINE PAYMENT</h1>
+                        <p>31 October 2022</p>
+						<p>We are upgrading our online credit card payment facilities to a new system with enhanced security protocol and features. This task is expected to complete by the 4th of November 2022. In the meantime, FPX payment service for B2C is still available and can be used to make payment.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-of-credit-card-payment-disruption/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">PROJECTION OF EXPATRIATES FOR THE YEAR 2023 OPENS ON 07 OCTOBER 2022</h1>
+                        <p>06 October 2022</p>
+						<p>Please be informed that companies registered in the Expatriate Services Division (ESD) online portal may apply for projection of expatriates for Employment Pass (EP) and Professional Visit Pass (PVP) for the year 2023 beginning of 07 October 2022.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="projection-ep-for-year-2023-opens-07oct2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXpats Open Day 2022</h1>
+                        <p>05 October 2022</p>
+						<p>We are pleased to inform that MYXpats Centre will be organizing its "Open Day" on Monthly basis in 2022. The objective of this Open Day is to further provide additional updates on matters related to ESD, EP, PVP and RP-T. This would also include other Immigration and Expatriate related issues.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-open-day-new-2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS CENTRE CLOSED FOR TRAINING ON FRIDAY 17 JUNE 2022</h1>
+                        <p>08 June 2022</p>
+						<p>Company representatives and RP-T holders can collect their Passports <span style="font-weight: bold;">before </span>4:00 pm on Thursday 16 June 2022. For any submissions of documents, passports, or payments at the counter, you may do so <span style="font-weight: bold;">before </span>12:00 pm on Friday 17 June 2022.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-centre-closed-for-training-17june2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MALAYSIA EXPATRIATE TALENT SERVICE CENTRE (MYXPATS): HELP US TO IMPROVE OUR SERVICES AND YOUR CUSTOMER EXPERIENCE</h1>
+                        <p>23 May 2022</p>
+						<p>We are pleased to share that the Malaysia Expatriate Talent Service Centre (MYXpats Centre) is extending the customer experience survey to 23 June 2022. Through this survey, we aim to obtain your feedback regarding your experiences with MYXpats Centre. The survey results will be used for us to ...</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-esd-survey-2021-extend/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">COVID-19 SOP RELAXATION FOR TRAVELLERS ENTERING MALAYSIA EFFECTIVE 1 MAY 2022</h1>
+                        <p>10 May 2022</p>
+						<p>We refer to the <span style="text-decoration-line: underline;">press release</span> issued by the Ministry of Health (MOH) dated 27 April 2022 where the Government has reviewed the control measures during the transition into endemic phase effective 1 May 2022. Please note the following procedures</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="covid19-sop-relaxation-for-travellers-effective-1may2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MALAYSIA EXPATRIATE TALENT SERVICE CENTRE (MYXPATS): HELP US TO IMPROVE OUR SERVICES AND YOUR CUSTOMER EXPERIENCE</h1>
+                        <p>18 April 2022</p>
+						<p>We are pleased to share that the Malaysia Expatriate Talent Service Centre (MYXpats Centre) is running a customer experience survey from<span style="font-weight: bold;">&nbsp;16 April to 16 May 2022</span>. Through this survey, we aim to obtain your feedback regarding your experiences with MYXpats Centre. The survey results will be used for us to further improve on our existing services, practices, and processes.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-esd-survey-2021/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS CENTRE HARI RAYA 2022 OPERATING HOURS</h1>
+                        <p>11 April 2022</p>
+						<p>In conjunction with the Hari Raya Aidilfitri festivities, we wish to inform that the MYXpats Centre (Surian Tower and Penang) will be closed on&nbsp;<span style="font-weight: bold;">Tuesday, 3 May 2022</span>&nbsp;and&nbsp;<span style="font-weight: bold;">Wednesday, 4 May 2022</span>. During this period, the MYXpats Centre counter, telephone and email services will not be available to clients.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-centre-hari-raya-2022-operating-hours/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">UPDATED: VACCINATED TRAVEL LANE (VTL) BY AIR BETWEEN SINGAPORE, THAILAND, CAMBODIA, AND MALAYSIA</h1>
+                        <p>05 April 2022</p>
+						<p>Referring to the <a href="vtl-by-air-between-singapore-malaysia-2022/index.html" style="color: rgb(5, 99, 193); text-decoration-line: underline;"><span style="background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">announcement</span></a><span style="color: rgb(52, 52, 52); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"> made on 16 February 2022, VTL is a programme introduced by the Ministry of Transport Malaysia to allow fully vaccinated travellers from one country to enter into another country without quarantine </span><span style="color: rgb(33, 37, 41); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">subject to COVID-19 testing and further requirements determined by the country of destination.</span><span style="color: rgb(52, 52, 52); background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;"><o:p></o:p></span></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="updated-vaccinated-travel-lane-vtl-by-air/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MALAYSIA - RE-OPENING OF INTERNATIONAL BORDERS ON 1 APRIL 2022</h1>
+                        <p>05 April 2022</p>
+						<p>We refer to the <a href="https://covid-19.moh.gov.my/semasa-kkm/2022/03/pembukaan-semula-sempadan-negara-malaysia" style="color: rgb(5, 99, 193); text-decoration-line: underline;"><span lang="EN-US">press release</span></a><span lang="EN-US"> issued by the Ministry of Health (MOH) dated 24 March 2022 where the Government announced the reopening of Malaysia's International borders for travelers from all countries, effective <b>1<sup> </sup>April 2022</b>.<o:p></o:p></span></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="malaysia-reopening-international-borders/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">OPERATION HOURS DURING RAMADAN 2022</h1>
+                        <p>01 April 2022</p>
+						<p>Kindly note the MYXpats Centre operation hours during the month of Ramadan, from Monday 4 April 2022 to Friday 29 April 2022.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="operation-hours-during-ramadan-2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">VACCINATED TRAVEL LANE (VTL) BY AIR BETWEEN SINGAPORE AND MALAYSIA</h1>
+                        <p>16 February 2022</p>
+						<p>We refer to the&nbsp;<a href="https://www.mot.gov.my/my/Kenyataan Media/Tahun 2021/Siaran Media MOT - LALUAN PERJALANAN VAKSINASI (VTL) UDARA ANTARA MALAYSIA DAN SINGAPURA DILANCARKAN MULAI 29 NOVEMBER 2021 V2.pdf" target="_blank" style="background-color: rgb(255, 255, 255); transition-property: all;">press release</a>&nbsp;issued by the Ministry of Transport (MOT) Malaysia dated 29 November 2021 where the Government announced the launch of the Vaccinated Travel Lane (VTL) programme by air from Singapore to Malaysia. The VTL programme is subject to the requirements set by the Ministry of Health (MOH) and the Immigration Department of Malaysia (JIM).</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="vtl-by-air-between-singapore-malaysia-2022/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">UPDATE E-SSM IN THE EXPATRIATE SERVICES DIVISION (ESD) SYSTEM</h1>
+                        <p>16 February 2022</p>
+						<p>We refer to the announcement made on 21 March 2017. Kindly note that companies need to update their e-SSM in the ESD system on a yearly basis. If there is a change in the information (Address/ Director/ Shareholder), companies must update the Companies Commission of Malaysia (SSM) before purchasing the e-SSM from e-Info in the ESD system.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="update-essm-in-esd-system/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">EXEMPTION OF THE MYENTRY/ MYTRAVELPASS PERMISSION ENTERING MALAYSIA</h1>
+                        <p>13 January 2022</p>
+						<p>Please be informed that the Immigration Department of Malaysia has made the decision to allow the exemption for those who have obtained pass approval applications to enter Malaysia for expatriates and their dependants, including foreign maids. This exemption is to take effect immediately.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="exemption-myentry-mytravelpass/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">UPDATED: IMPLEMENTATION OF MYVISA (EVISA) FACILITY FOR ALL COUNTRIES ENTERING MALAYSIA</h1>
+                        <p>10 January 2022</p>
+						<p>Please be informed that effective 15 November 2021, the use of the MYVisa system (eVISA) has been extended to all the respective nationalities and made compulsory by the Immigration Department of Malaysia. The applicant will need to apply for the <span style="font-weight: bold;">Visa with Reference (VDR)</span> through MYVisa system (eVISA)/ Embassy/ High Commission/ Consulate General of Malaysia in their respective countries.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="implementation-myvisa-facility-for-all-countries/index.html">read more</a>
+                    				</li>
+                			</ul> 
+		</div>
+		<div class="right"> 
+			<div class="top">
+				 <h3>TESTIMONIALS</h3>
+				 <div class="line"></div>
+				 <div class="testimonials-banner">
+				 	  <p>“Thanks to these wonderful neighbours, our culture shock was short-lived.”<a href="../../about-us/testimonials/index.html">read more +</a></p>
+					  <img src="../../images/TESTI11-William-Donald-Duncan.jpg" />
+				 </div>
+			</div>
+			<div class="bottom">
+				
+<h3>F.A.Q</h3>
+<div class="line"></div> 
+<div class="faq-banner">
+
+<div id="faq-container">
+        <p id="title"></p>
+        <p id="desc"></p>
+        <a href="../../faq/index.html">read more +</a>
+    </div>
+
+
+  <script>
+        $(document).ready(function() {
+            
+            function displayFAQs(faqs, index) {
+                var title = faqs[index].title;
+                var desc = faqs[index].desc;
+
+                $('#title').html('<b>Q:<br /> ' + title + '</b></p><br />');
+                $('#desc').html('A:<br />' + desc + '');
+                
+            }
+
+            $.ajax({
+                url: '/portal/include/ajax-faq.php',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        var faqs = response.data;
+                        var index = 0;
+                        var faqCount = faqs.length;
+
+                        
+                        displayFAQs(faqs, index);
+
+                       
+                        var timer = setInterval(function() {
+                            index = (index + 1) % faqCount;
+                            displayFAQs(faqs, index);
+                        }, 5000); 
+                    } else {
+                        $('#faq-container').text('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+			</div>
+			<div class="backtop-desktop" style="display: ;">
+				<a href="#0" class="cd-top">Back Top</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>   
+</div>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../../index.html">Home</a></li>
+						<li><a class=""  href="../../about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="../../employers/index.html">Employers</a></li>
+						<li><a class="" href="../../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../news/index.html">Latest News</a></li>
+                        <li><a class="" href="../../faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2022/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:20:42 GMT -->
+</html>

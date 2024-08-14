@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2020/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:20:52 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../../css/datepicker.css" rel="stylesheet">
+	<script src="../../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrapValidator.min.css">
+    <script src="../../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../../js/main.js"></script> 
+    <script src="../../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../../about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="../announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../../faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../../faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../../faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="../../faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="../../downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../../index.html" class="crumb" title="portal">portal</a><a href="../index.html" class="crumb" title="latest-news">latest-news</a><a href="index.html" class="crumb" title="announcement-2020">announcement-2020</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+<div class="announcement-wrapper page-content-wrapper news">
+	<h2 class="title">announcement</h2>
+	<div class="line"></div>
+	<div class="content">
+		<div class="left">
+			<div class="year-filter">
+				<select name="annyear" onChange="window.document.location.href=this.options[this.selectedIndex].value;" >
+					<option value="../announcement/index.html">2024</option>
+					<option value="../announcement-2023/index.html">2023</option>
+					<option value="../announcement-2022/index.html">2022</option>
+					<option value="../announcement-2021/index.html">2021</option>
+					<option value="https://esd.imi.gov.my/portal/latest-news/announcement-2020/" selected="selected">2020</option>
+					<option value="../announcement-2019/index.html">2019</option>
+                	<option value="../announcement-2018/index.html">2018</option>
+                	<option value="../announcement-2017/index.html">2017</option>
+                	<option value="../announcement-2016/index.html">2016</option>
+				  <option value="../announcement-2015/index.html">2015</option>
+				  <!-- <option value="2014">2014</option>
+				  <option value="2013">2013</option> -->
+				</select>
+			</div>
+			<ul class="list-wraper">
+                            <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">IMPLEMENTATION OF MYFUTUREJOBS RECOMMENDATION FOR EXPATRIATES EFFECTIVE 1 JANUARY 2021</h1>
+                        <p>31 December 2020</p>
+						<p>Please be informed that effective from 1 January 2021, employers who wish to hire expatriates will be required to advertise the vacancies for a minimum of 30 days on the MYFutureJobs portal.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myfuturejobs-recommendation-for-expatriates/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">REDUCED QUARANTINE PERIOD FOR INBOUND TRAVELLERS</h1>
+                        <p>21 December 2020</p>
+						<p>With immediate effect, please be informed that the Government has made the decision to reduce the mandatory quarantine period for all inbound expatriates and their <span style="color: rgb(85, 85, 85); font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;">dependants</span>, including foreign maids, from <span style="font-weight: bold;">fourteen (14) days</span> to <span style="font-weight: bold;">TEN (10) days</span>.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="reduced-quarantine-perio-for-inbound-travellers/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS CENTRE OPERATION SOP IN LINE WITH CMCO</h1>
+                        <p>10 December 2020</p>
+						<p>In reference to the announcement made on 6 December 2020, MYXpats Centre counter services will resume operation. In light of the current pandemic, strict Standard Operating Procedures (SOP) will be in place</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-centre-operation-cmco1/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">IMMIGRATION COUNTERS AT INSPECTORATE UNIT OF IMMIGRATION DEPARTMENT OF MALAYSIA ARE BACK IN OPERATION</h1>
+                        <p>08 December 2020</p>
+						<p>With immediate effect, please be informed that all matters related to Inspectorate Unit of Expatriate Services Division (ESD), Immigration Department of Malaysia, Putrajaya must be made through <span style="font-weight: bold;">MYHelp Appointment via ESD Online</span>.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="immi-counters-back-in-operation/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">RE-OPENING OF ESD PUTRAJAYA AND MYXPATS CENTRE COUNTER SERVICES</h1>
+                        <p>06 December 2020</p>
+						<p>In line with the announcement made by the Immigration Department of Malaysia on 4 December 2020, please be informed that counter services at Expatriate Services Division (ESD), Putrajaya and MYXpats Centre at Mutiara Damansara will resume operation starting from 7 December 2020 by appointments only - no walk-ins are permitted.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="cmco-reopen/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">PROJECTION OF EXPATRIATES FOR YEAR 2021 OPENS ON 1st DECEMBER 2020</h1>
+                        <p>30 November 2020</p>
+						<p>Please be informed that companies registered in the ESD online portal may now apply for projection of expatriates for Employment Pass (EP) and Professional Visit Pass (PVP) for the year 2021 starting 1st December 2020.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="projection-of-expatriates-for-year-2021-opens-on-1-december-2021/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">EXTENSION OF THE IMPLEMENTATION OF MYFUTUREJOBS RECOMMENDATION FOR FOREIGN WORKERS AND EXPATRIATES TO 1 JANUARY 2021</h1>
+                        <p>13 November 2020</p>
+						<p>In reference to the Government's announcement made on<span style="font-weight: bold;"> 10 November 2020</span> and also our earlier announcement dated<span style="font-weight: bold;"> 2 October 2020 </span>on the requirements to advertise vacancies on the JobsMalaysia (now MYFutureJobs) portal as a prerequisite for hiring foreign workers and expatriates...</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="extension-implementation-myfuturejobs/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">COMPANY ROLLOUT PROCESS AND CHANGE IN SIGNATORY FOR THE LETTER OF UNDERTAKING (LOU)</h1>
+                        <p>12 November 2020</p>
+						<p><div>Due to the current Conditional Movement Control Order (CMCO), with effect from 28 October 2020</div><div>the following processes will be conducted via online until further notice</div></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="rollout-and-lou-process/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">EXTENSION OF THE CONDITIONAL MOVEMENT CONTROL ORDER (CMCO) BY THE GOVERNMENT OF MALAYSIA (9 NOVEMBER 2020 UNTIL 6 DECEMBER 2020)</h1>
+                        <p>11 November 2020</p>
+						<p><p>In reference to the Government's announcement made on <span style="font-weight: bold;">7 November 2020</span>, please be informed that <span style="font-weight: bold;">Immigration Department of Malaysia</span> counter services in Peninsular Malaysia and <span style="font-weight: bold;">MYXpats Centre</span> at Mutiara Damansara will be temporarily CLOSED...</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="extension-of-cmco-201111/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">IMPORTANT ANNOUNCEMENT: EXTENSION OF CONDITIONAL MOVEMENT CONTROL ORDER (CMCO) BY THE GOVERNMENT OF MALAYSIA ON 26 OCTOBER 2020 - 9 NOVEMBER 2020</h1>
+                        <p>02 November 2020</p>
+						<p><div>In reference to our announcement made on <span style="font-weight: bold;">22 October 2020</span>, please be informed that all counter services in Expatriate Services Division (ESD) at Putrajaya and MYXpats Centre at Mutiara Damansara will be temporarily <span style="font-weight: bold;">CLOSED</span>.</div></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="extension-of-cmco-201102/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE: CONDITIONAL MOVEMENT CONTROL ORDER (CMCO) BY THE GOVERNMENT OF MALAYSIA ON 22 OCTOBER 2020</h1>
+                        <p>22 October 2020</p>
+						<p><p>MYXpats Centre remains committed to ensuring the safety of its employees and public stakeholders. In light of the recent increase of COVID-19 cases in Selangor, Kuala Lumpur, and Putrajaya, we wish to inform that MYXpats Centre will adhere to the latest update issued by the Government of Malaysia on 21 October 2020. </p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="cmco-announcement-new/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATES: CONDITIONAL MOVEMENT CONTROL ORDER (CMCO) BY THE GOVERNMENT OF MALAYSIA ON 12 OCTOBER 2020</h1>
+                        <p>13 October 2020</p>
+						<p><p>This is with reference to the latest announcement of COVID-19 outbreak made by the Government of Malaysia on 12 October 2020.
+</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="cmco-announcement/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE: ENTRY RESTRICTIONS ON FOREIGN TRAVELLERS TO MALAYSIA</h1>
+                        <p>08 October 2020</p>
+						<p><p>This is in reference to the latest announcement made on <b>18 September 2020</b> pertaining to the entry restrictions on foreign travellers to Malaysia.
+</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-my-permission-announce/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ADVERTISEMENT OF JOB VACANCIES VIA JOBSMALAYSIA PORTAL</h1>
+                        <p>02 October 2020</p>
+						<p><p>With regards to the Government initiatives made by Cabinet on 4th June 2020, companies that intend to hire an expatriate is required to advertise job vacancies to locals via JobsMalaysia Portal <a target=_blank href=https://www.jobsmalaysia.gov.my/jobsmy>https://www.jobsmalaysia.gov.my/jobsmy</a>.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="jobmalaysia-announcement/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE: ENTRY RESTRICTIONS ON FOREIGN TRAVELLERS TO MALAYSIA</h1>
+                        <p>18 September 2020</p>
+						<p><p>This is with reference to our announcement on entry restrictions on foreign travellers to Malaysia on <b>8 September 2020</b>.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-hold-my-permission-updates/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE: ENTRY RESTRICTIONS ON FOREIGN TRAVELLERS TO MALAYSIA</h1>
+                        <p>18 September 2020</p>
+						<p>The Expatriate Services Division (ESD) will post new announcements and verified updates on our ESD website.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-hold-my-permission/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ENTRY RESTRICTIONS ON FOREIGN TRAVELERS TO MALAYSIA</h1>
+                        <p>08 September 2020</p>
+						<p>Please be informed that the Government of Malaysia has imposed entry restrictions into Malaysia on foreign travellers who are travelling from countries that have recorded over 150,000 COVID-19 cases.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-restricts-malaysia/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ENTRY/EXIT AND RETURN TO MALAYSIA FOR EXPATRIATES VIA MYENTRY</h1>
+                        <p>27 August 2020</p>
+						<p>Effective 1 September 2020, all applications for the entry/exit and return to Malaysia will not be attended via taskforce_esd@imi.gov.my. All applications must be submitted through the MYEntry system.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-exit-return-malaysia/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">IMPLEMENTATION OF ADDITIONAL FACILITY IN ESD ONLINE SYSTEM: MYENTRY ONLINE SYSTEM FOR THE PERMISSION OF ENTRY/EXIT AND RETURN TO MALAYSIA FOR EXPATRIATES, AND ITS RELATED PASSES</h1>
+                        <p>10 August 2020</p>
+						<p>As announced by the Government of Malaysia on 18 March 2020, the Government has placed
+restrictions on Malaysians and non-Malaysians from entering and exiting the country, due to
+the COVID-19 pandemic. </p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-myentry/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE 28 JULY 2020<br> A. ENTRY PERMISSION FOR EXPATRIATES WITH AN ACTIVE PASS AND APPROVED PASS APPLICATION WHO ARE ABROAD<br> B. EXIT MALAYSIA AND RETURN PERMISSION WITH AN ACTIVE PASS WHO ARE IN MALAYSIA</h1>
+                        <p>28 July 2020</p>
+						<p>This is with reference to the latest announcement made on 25 July 2020 pertaining to the
+Entry Permission for Expatriates AND Permission to Exit and Return to Malaysia.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-permission-latest-announcement/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE 25 JULY 2020<br> A. ENTRY PERMISSION FOR EXPATRIATES WITH AN ACTIVE PASS AND APPROVED PASS APPLICATION WHO ARE ABROAD<br> B. EXIT MALAYSIA AND RETURN PERMISSION WITH AN ACTIVE PASS WHO ARE IN MALAYSIA</h1>
+                        <p>25 July 2020</p>
+						<p>This is with reference to the latest announcement made on 18 July 2020 pertaining to the
+Entry Permission for Expatriates AND Permission to Exit and Return to Malaysia.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-permission-latest/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE 18 JULY 2020<br> A. ENTRY PERMISSION FOR EXPATRIATES WITH AN ACTIVE PASS AND APPROVED PASS APPLICATION WHO ARE ABROAD<br> B. EXIT MALAYSIA AND RETURN PERMISSION WITH AN ACTIVE PASS WHO ARE IN MALAYSIA</h1>
+                        <p>19 July 2020</p>
+						<p>This is with reference to the latest announcement made on 11 July 2020 pertaining to the Entry
+Permission for Expatriates AND Permission to Exit and Return to Malaysia.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="entry-permission/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE : 11 JULY 2020 <br/> A. ENTRY PERMISSION FOR EXPATRIATES WITH AN ACTIVE PASS AND APPROVED PASS APPLICATION WHO ARE ABROAD <br/> B. EXIT MALAYSIA AND RETURN PERMISSION WITH AN ACTIVE PASS WHO ARE IN MALAYSIA</h1>
+                        <p>11 July 2020</p>
+						<p>This is in conjunction with the announcement made by the Government of Malaysia for expatriates as outlined in the Guidelines during the Movement Control Order (MCO) period.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-entry-permission-exptratiates/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">LATEST UPDATE AS OF 24 JUNE 2020  ENTRY PERMISSION FOR EXPATRIATES WITH AN ACTIVE PASS AND APPROVED APPLICATION WHO ARE ABROAD AS ANNOUNCED BY THE MALAYSIAN GOVERNMENT ON 19 JUNE  2020</h1>
+                        <p>24 June 2020</p>
+						<p>This is in conjunction with the recent announcement made by the
+Government of Malaysia for expatriates to enter Malaysia without
+the need to apply for permission as outlined in the Guidelines
+during the Movement Control Order (MCO) period.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-entry/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ENTRY PERMISSION FOR EXPATRIATES AS ANNOUNCED BY THE MALAYSIAN GOVERNMENT ON 19TH JUNE 2020</h1>
+                        <p>23 June 2020</p>
+						<p>This is in conjunction with the recent announcement made by the Government of Malaysia for expatriates to enter Malaysia without the need to apply for permission as outlined in the Guidelines during the Movement Control Order (MCO) period.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-entry-permissions/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">GUIDELINES FOR THE ENTRY OF EXPATRIATE / SKILLED WORKER / KNOWLEDGE WORKER FOR KEY POSTS AND TECHNICAL POSTS, AND FOR DEPENDENTS / FOREIGN MAIDS</h1>
+                        <p>10 June 2020</p>
+						<p>We are pleased to announce that the Immigration Department of Malaysia has issued new guidelines for Expatriate / Skilled Worker / Knowledge Worker Entering Malaysia for Key Posts and Technical Posts, and for Dependents and Foreign Maids during the Recovery Movement Control Order (RMCO) period.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-rmco-sop/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS HELPDESK TO RESUME FULL OPERATIONS FROM 10 JUNE 2020 ONWARDS</h1>
+                        <p>09 June 2020</p>
+						<p>The Government of Malaysia recently announced that the Conditional Movement
+Control Order (CMCO) that ends on 9 June 2020 will be replaced with the Recovery
+Movement Control Order (RMCO), effective until 31 August 2020.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-rmco-announcement/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NEW UPDATE: MYHELP ONLINE APPOINTMENT OPERATION HOUR FOR COUNTER TRANSACTIONS IN ESD AND RP-T SYSTEM</h1>
+                        <p>27 May 2020</p>
+						<p>In reference to the ESD announcement dated 3 May 2020, kindly be reminded that we continue to observe social distancing and have put in place measures to discourage crowds at the Immigration Office in Putrajaya. <u>Walk-ins are strictly not allowed</u>, and <b>no one will be permitted to enter without a confirmed appointment</b>.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myhelp-appointment/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ONLINE APPOINTMENT FOR SELECTED TRANSACTIONS AT EXPATRIATE SERVICES DIVISION (ESD), IMMIGRATION PUTRAJAYA VIA SISTEM TEMUJANJI ONLINE (STO)</h1>
+                        <p>07 May 2020</p>
+						<p><p>In reference to the ESD announcement dated 3 May 2020, kindly be reminded that we continue to observe social distancing and have put in place measures to discourage crowds at the Immigration Office in Putrajaya. <u>Walk-ins are strictly not allowed</u>, and <b>no one will be permitted to enter without a confirmed appointment</b>.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-appointment-selected/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYHELP ONLINE APPOINTMENT FOR COUNTER TRANSACTIONS IN ESD AND RP-T SYSTEM</h1>
+                        <p>03 May 2020</p>
+						<p>We refer to the latest announcement made by Malaysia's Prime Minister on 1 May 2020 which allows most of the industry and business activity to operate by adhering to the strict SOP that is in place to protect us from the COVID-19 virus.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-appointment-esd-rpt/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">COVID-19, MOVEMENT CONTROL ORDER BY THE PRIME MINISTER OF MALAYSIA (LATEST UPDATE)</h1>
+                        <p>24 April 2020</p>
+						<p>We refer to the latest announcement of Coronavirus 2019 (COVID-19) outbreak made by Malaysia's Prime Minister on 23rd April 2020.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-convid19-latest-17-march/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">REMINDER NOTIFICATION: REQUIREMENTS ON EXPATRIATE PROJECTION APPLICATION</h1>
+                        <p>16 April 2020</p>
+						<p>Please be informed that companies registered in the ESD online portal will need to ensure that their company details (listed below) have been updated before the projection application of expatriates for Employment Pass (EP) and Professional Visit Pass (PVP) to avoid application to be returned due to incomplete/outdated information.  Below are the details:</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-projection-application-requirements/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">COVID-19 (LATEST ANNOUNCEMENT)</h1>
+                        <p>12 March 2020</p>
+						<p>Reference is made to the series of announcements on Coronavirus 2019 (COVID-19) outbreak. The Government of Malaysia has decided to restrict the entry into Malaysia from these following countries</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-convid19-latest/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ENTRY FOR SOUTH KOREAN NATIONALITIES FROM DAEGU CITY, CHEONGDO COUNTY AND ALL NATIONALITIES WHO WERE PRESENT IN DAEGU CITY FOR THE LAST 14 DAYS</h1>
+                        <p>03 March 2020</p>
+						<p>Reference is made to the latest announcement on Coronavirus 2019 (COVID-19) outbreak from the Prime Minister Office dated 27th January 2020 and the announcements from ESD website dated 29th January 2020 and 10th February 2020 respectively.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-convid19-south-korea/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE OF E-CASHLESS PAYMENT VIA CREDIT CARD AND DEBIT CARD AT MYXPATS CENTRE</h1>
+                        <p>28 February 2020</p>
+						<p>Effective Monday, <b><u>9 March 2020</u></b>, we are pleased to announce that we will be implementing the e-cashless payment for Immigration fees at MYXpats Centre.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-ecashless/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">EXPATRIATE APPLICATION FOR PEOPLE REPUBLIC OF CHINA (PRC) PASSPORT ISSUED IN HUBEI, ZHEJIANG AND JIANGSU PROVINCES OF CHINA, AND ALL NATIONALITIES WHO WERE PRESENT IN THESE PROVINCES WITHIN THE LAST 14 DAYS</h1>
+                        <p>11 February 2020</p>
+						<p>We refer to the latest announcement on <b>Coronavirus outbreak</b> from the Prime Minister Office dated 27th January 2020 and the announcement from ESD website dated 29th January 2020. The Government of Malaysia has decided to put on hold for all type of entry visas from Wuhan City, Hubei Province of China.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-for-coronavirus-outbreak-2/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">EXPATRIATE APPLICATION FOR PEOPLE REPUBLIC OF CHINA (PRC) PASSPORT ISSUED IN WUHAN CITY, HUBEI PROVINCE OF CHINA</h1>
+                        <p>29 January 2020</p>
+						<p>We refer to the latest announcement on <b>Coronavirus outbreak</b> from the Prime Minister Office dated 27th January 2020. The Government of Malaysia has decided to put on hold for all type of entry visas from Wuhan City, Hubei Province of China.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-for-coronavirus-outbreak/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">FACILITATION OF EXPATRIATE PROJECTION APPLICATION FOR EMPLOYMENT PASS (EP)/PROFESSIONAL VISIT PASS (PVP)</h1>
+                        <p>10 January 2020</p>
+						<p>We are pleased to inform that effective Monday, 13 January 2020, both EP
+and PVP projection application and its related matters will be facilitated directly
+by Inspectorate Unit, Expatriate Services Division (ESD), Immigration
+Department of Malaysia, Putrajaya through the ESD online system.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="facilitation-of-expatriate-projection-application/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXpats Open Day</h1>
+                        <p>09 January 2020</p>
+						<p>We are pleased to inform that MYXpats Centre will be organizing its "Open Day" on Monthly basis in 2019. The objective of this Open Day is to further provide additional updates on matters related to ESD, EP, PVP and RP-T. This would also include other Immigration and Expatriate related issues.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-open-day-new-2020/index.html">read more</a>
+                    				</li>
+                			</ul> 
+		</div>
+		<div class="right"> 
+			<div class="top">
+				 <h3>TESTIMONIALS</h3>
+				 <div class="line"></div>
+				 <div class="testimonials-banner">
+				 	  <p>“Thanks to these wonderful neighbours, our culture shock was short-lived.”<a href="../../about-us/testimonials/index.html">read more +</a></p>
+					  <img src="../../images/TESTI11-William-Donald-Duncan.jpg" />
+				 </div>
+			</div>
+			<div class="bottom">
+				
+<h3>F.A.Q</h3>
+<div class="line"></div> 
+<div class="faq-banner">
+
+<div id="faq-container">
+        <p id="title"></p>
+        <p id="desc"></p>
+        <a href="../../faq/index.html">read more +</a>
+    </div>
+
+
+  <script>
+        $(document).ready(function() {
+            
+            function displayFAQs(faqs, index) {
+                var title = faqs[index].title;
+                var desc = faqs[index].desc;
+
+                $('#title').html('<b>Q:<br /> ' + title + '</b></p><br />');
+                $('#desc').html('A:<br />' + desc + '');
+                
+            }
+
+            $.ajax({
+                url: '/portal/include/ajax-faq.php',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        var faqs = response.data;
+                        var index = 0;
+                        var faqCount = faqs.length;
+
+                        
+                        displayFAQs(faqs, index);
+
+                       
+                        var timer = setInterval(function() {
+                            index = (index + 1) % faqCount;
+                            displayFAQs(faqs, index);
+                        }, 5000); 
+                    } else {
+                        $('#faq-container').text('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+			</div>
+			<div class="backtop-desktop" style="display: ;">
+				<a href="#0" class="cd-top">Back Top</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>   
+</div>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../../index.html">Home</a></li>
+						<li><a class=""  href="../../about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="../../employers/index.html">Employers</a></li>
+						<li><a class="" href="../../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../news/index.html">Latest News</a></li>
+                        <li><a class="" href="../../faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2020/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:20:54 GMT -->
+</html>

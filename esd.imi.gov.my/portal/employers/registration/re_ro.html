@@ -1,0 +1,683 @@
+
+
+<div id="Company-registration-form" class="Company-registration-form step-one">
+		<div id="registration-form" class="registration-form">	
+						<div class="field">
+				<div class="registration-label">
+					<label for="registration-no" class="registration-title">RE/RO Registration No.:</label>
+				</div>
+				<div class="society-no input-field">
+					<input name="CCM1" id="CCM1" type="text" maxlength="16" size="10" style="width:55%; text-transform:uppercase;" onkeypress="return IsAlphaNumeric(event);" onChange="this.value = this.value.toUpperCase();" /> <span id="error" style="color: Red; display: none">* Special Characters not allowed</span>
+				</div>
+			</div>
+			
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration_no" class="registration-title">Date of Incorporation</label>
+				</div>
+				<div class="commencement-date input-field">
+					<input id="ccmRegDate" name="ccmRegDate" type="text" size="10" READONLY />
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-company-name" class="registration-title">Name of Parent Company</label>
+				</div>
+				<div class="name-of-society input-field">
+					<input id="companyName" name="companyName" type="text" size="77" style="text-transform:uppercase;" onkeypress="return IsAlphaNumeric2(event);" onChange="this.value = this.value.toUpperCase();" /> <span id="error2" style="color: Red; display: none"><br>* Special Characters not allowed</br></span>
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-company-add" class="registration-title">Registered Address of <br>Parent Company</label>
+				</div>
+				<div class="address-of-society input-field">
+					<input id="address1" name="address1" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();"><br/>
+					<input id="address2" name="address2" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();"><br/>
+					<input id="address3" name="address3" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();">
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-postcode" class="registration-title">Postcode:</label>
+				</div>
+				<div class="postcode input-field">
+					<input id="postalCode" name="postalCode" class="required digits valid" maxlength="5" onChange="this.value = this.value.toUpperCase();">
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-state" class="registration-title">Country of Incorporation:</label>
+				</div>
+				<div class="state input-field">
+					<select id='state' name='state' class='state'>
+<option value=''>- PLEASE SELECT -</option>
+<option value='AF' >AFGHANISTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='AL' >ALBANIA&nbsp;&nbsp;&nbsp;</option>
+<option value='DZ' >ALGERIA&nbsp;&nbsp;&nbsp;</option>
+<option value='AD' >ANDORRA&nbsp;&nbsp;&nbsp;</option>
+<option value='AO' >ANGOLA&nbsp;&nbsp;&nbsp;</option>
+<option value='AI' >ANGUILLA&nbsp;&nbsp;&nbsp;</option>
+<option value='AQ' >ANTARCTICA&nbsp;&nbsp;&nbsp;</option>
+<option value='AG' >ANTIGUA AND BARBUDA&nbsp;&nbsp;&nbsp;</option>
+<option value='AR' >ARGENTINA&nbsp;&nbsp;&nbsp;</option>
+<option value='AM' >ARMENIA&nbsp;&nbsp;&nbsp;</option>
+<option value='AW' >ARUBA&nbsp;&nbsp;&nbsp;</option>
+<option value='AU' >AUSTRALIA&nbsp;&nbsp;&nbsp;</option>
+<option value='AT' >AUSTRIA&nbsp;&nbsp;&nbsp;</option>
+<option value='AZ' >AZERBAIJAN&nbsp;&nbsp;&nbsp;</option>
+<option value='BS' >BAHAMAS&nbsp;&nbsp;&nbsp;</option>
+<option value='BH' >BAHRAIN&nbsp;&nbsp;&nbsp;</option>
+<option value='BD' >BANGLADESH&nbsp;&nbsp;&nbsp;</option>
+<option value='BB' >BARBADOS&nbsp;&nbsp;&nbsp;</option>
+<option value='BY' >BELARUS&nbsp;&nbsp;&nbsp;</option>
+<option value='BE' >BELGIUM&nbsp;&nbsp;&nbsp;</option>
+<option value='BZ' >BELIZE&nbsp;&nbsp;&nbsp;</option>
+<option value='BJ' >BENIN&nbsp;&nbsp;&nbsp;</option>
+<option value='BM' >BERMUDA&nbsp;&nbsp;&nbsp;</option>
+<option value='BT' >BHUTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='BO' >BOLIVIA&nbsp;&nbsp;&nbsp;</option>
+<option value='BA' >BOSNIA AND HERZEGOVINA&nbsp;&nbsp;&nbsp;</option>
+<option value='BW' >BOTSWANA&nbsp;&nbsp;&nbsp;</option>
+<option value='BV' >BOUVET ISLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='BR' >BRAZIL&nbsp;&nbsp;&nbsp;</option>
+<option value='IO' >BRITISH INDIAN OCEAN TERRITORY&nbsp;&nbsp;&nbsp;</option>
+<option value='VG' >BRITISH VIRGIN ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='BN' >BRUNEI DARUSSALAM&nbsp;&nbsp;&nbsp;</option>
+<option value='BG' >BULGARIA&nbsp;&nbsp;&nbsp;</option>
+<option value='BF' >BURKINA FASO&nbsp;&nbsp;&nbsp;</option>
+<option value='BI' >BURUNDI&nbsp;&nbsp;&nbsp;</option>
+<option value='KH' >CAMBODIA&nbsp;&nbsp;&nbsp;</option>
+<option value='CM' >CAMEROON&nbsp;&nbsp;&nbsp;</option>
+<option value='CA' >CANADA&nbsp;&nbsp;&nbsp;</option>
+<option value='CV' >CAPE VERDE&nbsp;&nbsp;&nbsp;</option>
+<option value='KY' >CAYMAN ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='CF' >CENTRAL AFRICAN REPUBLIC&nbsp;&nbsp;&nbsp;</option>
+<option value='TD' >CHAD&nbsp;&nbsp;&nbsp;</option>
+<option value='CL' >CHILE&nbsp;&nbsp;&nbsp;</option>
+<option value='CX' >CHRISTMAS ISLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='CC' >COCOS (KEELING) ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='CO' >COLOMBIA&nbsp;&nbsp;&nbsp;</option>
+<option value='KM' >COMOROS&nbsp;&nbsp;&nbsp;</option>
+<option value='CK' >COOK ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='CR' >COSTA RICA&nbsp;&nbsp;&nbsp;</option>
+<option value='CI' >COTE D IVOIRE&nbsp;&nbsp;&nbsp;</option>
+<option value='HR' >CROATIA&nbsp;&nbsp;&nbsp;</option>
+<option value='CU' >CUBA&nbsp;&nbsp;&nbsp;</option>
+<option value='CY' >CYPRUS&nbsp;&nbsp;&nbsp;</option>
+<option value='CZ' >CZECH REPUBLIC&nbsp;&nbsp;&nbsp;</option>
+<option value='CD' >DEMOCRATIC REPUBLIC OF THE CON&nbsp;&nbsp;&nbsp;</option>
+<option value='DK' >DENMARK&nbsp;&nbsp;&nbsp;</option>
+<option value='DM' >DOMINICA&nbsp;&nbsp;&nbsp;</option>
+<option value='DO' >DOMINICAN REPUBLIC&nbsp;&nbsp;&nbsp;</option>
+<option value='TP' >EAST TIMOR&nbsp;&nbsp;&nbsp;</option>
+<option value='EC' >ECUADOR&nbsp;&nbsp;&nbsp;</option>
+<option value='EG' >EGYPT&nbsp;&nbsp;&nbsp;</option>
+<option value='SV' >EL SALVADOR&nbsp;&nbsp;&nbsp;</option>
+<option value='GQ' >EQUATORIAL GUINEA&nbsp;&nbsp;&nbsp;</option>
+<option value='ER' >ERITREA&nbsp;&nbsp;&nbsp;</option>
+<option value='EE' >ESTONIA&nbsp;&nbsp;&nbsp;</option>
+<option value='ET' >ETHIOPIA&nbsp;&nbsp;&nbsp;</option>
+<option value='FK' >FALKLAND ISLANDS (ISLAS MALVIN&nbsp;&nbsp;&nbsp;</option>
+<option value='FO' >FAROE ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='FM' >FEDERATED STATES OF MICRONESIA&nbsp;&nbsp;&nbsp;</option>
+<option value='FJ' >FIJI&nbsp;&nbsp;&nbsp;</option>
+<option value='FI' >FINLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='FR' >FRANCE&nbsp;&nbsp;&nbsp;</option>
+<option value='FX' >FRANCE METROPOLITAN&nbsp;&nbsp;&nbsp;</option>
+<option value='GF' >FRENCH GUIANA&nbsp;&nbsp;&nbsp;</option>
+<option value='PF' >FRENCH POLYNESIA&nbsp;&nbsp;&nbsp;</option>
+<option value='TF' >FRENCH SOUTHERN & ANTARCTIC&nbsp;&nbsp;&nbsp;</option>
+<option value='GA' >GABON&nbsp;&nbsp;&nbsp;</option>
+<option value='GM' >GAMBIA&nbsp;&nbsp;&nbsp;</option>
+<option value='GE' >GEORGIA&nbsp;&nbsp;&nbsp;</option>
+<option value='DE' >GERMANY&nbsp;&nbsp;&nbsp;</option>
+<option value='GH' >GHANA&nbsp;&nbsp;&nbsp;</option>
+<option value='GI' >GIBRALTAR&nbsp;&nbsp;&nbsp;</option>
+<option value='GR' >GREECE&nbsp;&nbsp;&nbsp;</option>
+<option value='GL' >GREENLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='GD' >GRENADA&nbsp;&nbsp;&nbsp;</option>
+<option value='GP' >GUADELOUPE&nbsp;&nbsp;&nbsp;</option>
+<option value='GU' >GUAM&nbsp;&nbsp;&nbsp;</option>
+<option value='GT' >GUATEMALA&nbsp;&nbsp;&nbsp;</option>
+<option value='GG' >GUERNSEY&nbsp;&nbsp;&nbsp;</option>
+<option value='GN' >GUINEA&nbsp;&nbsp;&nbsp;</option>
+<option value='GW' >GUINEA-BISSAU&nbsp;&nbsp;&nbsp;</option>
+<option value='GY' >GUYANA&nbsp;&nbsp;&nbsp;</option>
+<option value='HT' >HAITI&nbsp;&nbsp;&nbsp;</option>
+<option value='HM' >HEARD & MCDONALD ISLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='HN' >HONDURAS&nbsp;&nbsp;&nbsp;</option>
+<option value='HK' >HONG KONG (SAR)&nbsp;&nbsp;&nbsp;</option>
+<option value='HU' >HUNGARY&nbsp;&nbsp;&nbsp;</option>
+<option value='IS' >ICELAND&nbsp;&nbsp;&nbsp;</option>
+<option value='IN' >INDIA&nbsp;&nbsp;&nbsp;</option>
+<option value='ID' >INDONESIA&nbsp;&nbsp;&nbsp;</option>
+<option value='IR' >IRAN&nbsp;&nbsp;&nbsp;</option>
+<option value='IQ' >IRAQ&nbsp;&nbsp;&nbsp;</option>
+<option value='IE' >IRELAND&nbsp;&nbsp;&nbsp;</option>
+<option value='IM' >ISLE OF MAN&nbsp;&nbsp;&nbsp;</option>
+<option value='IL' >ISRAEL&nbsp;&nbsp;&nbsp;</option>
+<option value='IT' >ITALY&nbsp;&nbsp;&nbsp;</option>
+<option value='JM' >JAMAICA&nbsp;&nbsp;&nbsp;</option>
+<option value='JP' >JAPAN&nbsp;&nbsp;&nbsp;</option>
+<option value='JE' >JERSEY&nbsp;&nbsp;&nbsp;</option>
+<option value='JO' >JORDAN&nbsp;&nbsp;&nbsp;</option>
+<option value='KZ' >KAZAKHSTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='KE' >KENYA&nbsp;&nbsp;&nbsp;</option>
+<option value='KI' >KIRIBATI&nbsp;&nbsp;&nbsp;</option>
+<option value='KO' >KOSOVO&nbsp;&nbsp;&nbsp;</option>
+<option value='KW' >KUWAIT&nbsp;&nbsp;&nbsp;</option>
+<option value='KG' >KYRGYZSTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='LA' >LAOS&nbsp;&nbsp;&nbsp;</option>
+<option value='LV' >LATVIA&nbsp;&nbsp;&nbsp;</option>
+<option value='LB' >LEBANON&nbsp;&nbsp;&nbsp;</option>
+<option value='LS' >LESOTHO&nbsp;&nbsp;&nbsp;</option>
+<option value='LR' >LIBERIA&nbsp;&nbsp;&nbsp;</option>
+<option value='LY' >LIBYA&nbsp;&nbsp;&nbsp;</option>
+<option value='LI' >LIECHTENSTEIN&nbsp;&nbsp;&nbsp;</option>
+<option value='LT' >LITHUANIA&nbsp;&nbsp;&nbsp;</option>
+<option value='LU' >LUXEMBOURG&nbsp;&nbsp;&nbsp;</option>
+<option value='MO' >MACAO&nbsp;&nbsp;&nbsp;</option>
+<option value='MK' >MACEDONIA&nbsp;&nbsp;&nbsp;</option>
+<option value='MG' >MADAGASCAR&nbsp;&nbsp;&nbsp;</option>
+<option value='MW' >MALAWI&nbsp;&nbsp;&nbsp;</option>
+<option value='MY' >MALAYSIA&nbsp;&nbsp;&nbsp;</option>
+<option value='MV' >MALDIVES&nbsp;&nbsp;&nbsp;</option>
+<option value='ML' >MALI&nbsp;&nbsp;&nbsp;</option>
+<option value='MT' >MALTA&nbsp;&nbsp;&nbsp;</option>
+<option value='MH' >MARSHALL ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='MQ' >MARTINIQUE&nbsp;&nbsp;&nbsp;</option>
+<option value='MR' >MAURITANIA&nbsp;&nbsp;&nbsp;</option>
+<option value='MU' >MAURITIUS&nbsp;&nbsp;&nbsp;</option>
+<option value='YT' >MAYOTTE&nbsp;&nbsp;&nbsp;</option>
+<option value='MX' >MEXICO&nbsp;&nbsp;&nbsp;</option>
+<option value='MD' >MOLDOVA&nbsp;&nbsp;&nbsp;</option>
+<option value='MC' >MONACO&nbsp;&nbsp;&nbsp;</option>
+<option value='MN' >MONGOLIA&nbsp;&nbsp;&nbsp;</option>
+<option value='MNE' >MONTENEGRO&nbsp;&nbsp;&nbsp;</option>
+<option value='MS' >MONTSERRAT&nbsp;&nbsp;&nbsp;</option>
+<option value='MA' >MOROCCO&nbsp;&nbsp;&nbsp;</option>
+<option value='MZ' >MOZAMBIQUE&nbsp;&nbsp;&nbsp;</option>
+<option value='MM' >MYANMAR&nbsp;&nbsp;&nbsp;</option>
+<option value='NA' >NAMIBIA&nbsp;&nbsp;&nbsp;</option>
+<option value='NR' >NAURU&nbsp;&nbsp;&nbsp;</option>
+<option value='NP' >NEPAL&nbsp;&nbsp;&nbsp;</option>
+<option value='NL' >NETHERLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='AN' >NETHERLANDS ANTILLES&nbsp;&nbsp;&nbsp;</option>
+<option value='NC' >NEW CALEDONIA&nbsp;&nbsp;&nbsp;</option>
+<option value='NZ' >NEW ZEALAND&nbsp;&nbsp;&nbsp;</option>
+<option value='NI' >NICARAGUA&nbsp;&nbsp;&nbsp;</option>
+<option value='NE' >NIGER&nbsp;&nbsp;&nbsp;</option>
+<option value='NG' >NIGERIA&nbsp;&nbsp;&nbsp;</option>
+<option value='NU' >NIUE&nbsp;&nbsp;&nbsp;</option>
+<option value='NF' >NORFOLK ISLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='KP' >NORTH KOREA&nbsp;&nbsp;&nbsp;</option>
+<option value='MP' >NORTHERN MARIANA ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='NO' >NORWAY&nbsp;&nbsp;&nbsp;</option>
+<option value='PS' >OCCUPIED PALESTINIAN TERRITORY&nbsp;&nbsp;&nbsp;</option>
+<option value='OM' >OMAN&nbsp;&nbsp;&nbsp;</option>
+<option value='PK' >PAKISTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='PW' >PALAU&nbsp;&nbsp;&nbsp;</option>
+<option value='PA' >PANAMA&nbsp;&nbsp;&nbsp;</option>
+<option value='PG' >PAPUA NEW GUINEA&nbsp;&nbsp;&nbsp;</option>
+<option value='PY' >PARAGUAY&nbsp;&nbsp;&nbsp;</option>
+<option value='CN' >PEOPLE REPUBLIC OF CHINA&nbsp;&nbsp;&nbsp;</option>
+<option value='PE' >PERU&nbsp;&nbsp;&nbsp;</option>
+<option value='PH' >PHILIPPINES&nbsp;&nbsp;&nbsp;</option>
+<option value='PN' >PITCAIRN ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='PL' >POLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='PT' >PORTUGAL&nbsp;&nbsp;&nbsp;</option>
+<option value='PR' >PUERTO RICO&nbsp;&nbsp;&nbsp;</option>
+<option value='QA' >QATAR&nbsp;&nbsp;&nbsp;</option>
+<option value='DJ' >REPUBLIC OF DJIBOUTI&nbsp;&nbsp;&nbsp;</option>
+<option value='CG' >REPUBLIC OF THE CONGO&nbsp;&nbsp;&nbsp;</option>
+<option value='RE' >REUNION&nbsp;&nbsp;&nbsp;</option>
+<option value='RO' >ROMANIA&nbsp;&nbsp;&nbsp;</option>
+<option value='RU' >RUSSIA&nbsp;&nbsp;&nbsp;</option>
+<option value='RW' >RWANDA&nbsp;&nbsp;&nbsp;</option>
+<option value='SH' >SAINT HELENA&nbsp;&nbsp;&nbsp;</option>
+<option value='KN' >SAINT KITTS AND NEVIS&nbsp;&nbsp;&nbsp;</option>
+<option value='LC' >SAINT LUCIA&nbsp;&nbsp;&nbsp;</option>
+<option value='PM' >SAINT PIERRE AND MIQUELON&nbsp;&nbsp;&nbsp;</option>
+<option value='VC' >SAINT VINCENT AND THE GRENADIN&nbsp;&nbsp;&nbsp;</option>
+<option value='WS' >SAMOA&nbsp;&nbsp;&nbsp;</option>
+<option value='SM' >SAN MARINO&nbsp;&nbsp;&nbsp;</option>
+<option value='SA' >SAUDI ARABIA&nbsp;&nbsp;&nbsp;</option>
+<option value='SN' >SENEGAL&nbsp;&nbsp;&nbsp;</option>
+<option value='CS' >SERBIA&nbsp;&nbsp;&nbsp;</option>
+<option value='SC' >SEYCHELLES&nbsp;&nbsp;&nbsp;</option>
+<option value='SL' >SIERRA LEONE&nbsp;&nbsp;&nbsp;</option>
+<option value='SG' >SINGAPORE&nbsp;&nbsp;&nbsp;</option>
+<option value='SK' >SLOVAKIA&nbsp;&nbsp;&nbsp;</option>
+<option value='SI' >SLOVENIA&nbsp;&nbsp;&nbsp;</option>
+<option value='SB' >SOLOMON ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='SO' >SOMALIA&nbsp;&nbsp;&nbsp;</option>
+<option value='ZA' >SOUTH AFRICA&nbsp;&nbsp;&nbsp;</option>
+<option value='KR' >SOUTH KOREA&nbsp;&nbsp;&nbsp;</option>
+<option value='SSD' >SOUTH SUDAN&nbsp;&nbsp;&nbsp;</option>
+<option value='ES' >SPAIN&nbsp;&nbsp;&nbsp;</option>
+<option value='LK' >SRI LANKA&nbsp;&nbsp;&nbsp;</option>
+<option value='ZZA' >STATELESS&nbsp;&nbsp;&nbsp;</option>
+<option value='SD' >SUDAN&nbsp;&nbsp;&nbsp;</option>
+<option value='SR' >SURINAME&nbsp;&nbsp;&nbsp;</option>
+<option value='SJ' >SVALBARD&nbsp;&nbsp;&nbsp;</option>
+<option value='SZ' >SWAZILAND&nbsp;&nbsp;&nbsp;</option>
+<option value='SE' >SWEDEN&nbsp;&nbsp;&nbsp;</option>
+<option value='CH' >SWITZERLAND&nbsp;&nbsp;&nbsp;</option>
+<option value='SY' >SYRIA&nbsp;&nbsp;&nbsp;</option>
+<option value='TW' >TAIWAN&nbsp;&nbsp;&nbsp;</option>
+<option value='TJ' >TAJIKISTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='TZ' >TANZANIA&nbsp;&nbsp;&nbsp;</option>
+<option value='TH' >THAILAND&nbsp;&nbsp;&nbsp;</option>
+<option value='TG' >TOGO&nbsp;&nbsp;&nbsp;</option>
+<option value='TK' >TOKELAU&nbsp;&nbsp;&nbsp;</option>
+<option value='TO' >TONGA&nbsp;&nbsp;&nbsp;</option>
+<option value='TT' >TRINIDAD AND TOBAGO&nbsp;&nbsp;&nbsp;</option>
+<option value='TN' >TUNISIA&nbsp;&nbsp;&nbsp;</option>
+<option value='TR' >TURKEY&nbsp;&nbsp;&nbsp;</option>
+<option value='TM' >TURKMENISTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='TC' >TURKS AND CAICOS ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='TV' >TUVALU&nbsp;&nbsp;&nbsp;</option>
+<option value='UG' >UGANDA&nbsp;&nbsp;&nbsp;</option>
+<option value='UA' >UKRAINE&nbsp;&nbsp;&nbsp;</option>
+<option value='AE' >UNITED ARAB EMIRATES&nbsp;&nbsp;&nbsp;</option>
+<option value='UK' >UNITED KINGDOM&nbsp;&nbsp;&nbsp;</option>
+<option value='UKGB' >UNITED KINGDOM OF GREAT BRITAIN&nbsp;&nbsp;&nbsp;</option>
+<option value='US' >UNITED STATES&nbsp;&nbsp;&nbsp;</option>
+<option value='UY' >URUGUAY&nbsp;&nbsp;&nbsp;</option>
+<option value='UZ' >UZBEKISTAN&nbsp;&nbsp;&nbsp;</option>
+<option value='VU' >VANUATU&nbsp;&nbsp;&nbsp;</option>
+<option value='VA' >VATICAN CITY&nbsp;&nbsp;&nbsp;</option>
+<option value='VE' >VENEZUELA&nbsp;&nbsp;&nbsp;</option>
+<option value='VN' >VIETNAM&nbsp;&nbsp;&nbsp;</option>
+<option value='VI' >VIRGIN ISLANDS&nbsp;&nbsp;&nbsp;</option>
+<option value='WF' >WALLIS AND FUTUNA&nbsp;&nbsp;&nbsp;</option>
+<option value='EH' >WESTERN SAHARA&nbsp;&nbsp;&nbsp;</option>
+<option value='YE' >YEMEN&nbsp;&nbsp;&nbsp;</option>
+<option value='YU' >YUGOSLAVIA&nbsp;&nbsp;&nbsp;</option>
+<option value='ZM' >ZAMBIA&nbsp;&nbsp;&nbsp;</option>
+<option value='ZW' >ZIMBABWE&nbsp;&nbsp;&nbsp;</option>
+</select>
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-phone-no" class="registration-title">Tel No.</label>
+				</div>
+				<div class="tel-no input-field">
+					<input id="companyContactNo" name="companyContactNo" type="text" size="20" onkeypress="return IsAlphaNumeric3(event);" onChange="this.value = this.value.toUpperCase();"/> <span id="error3" style="color: Red; display: none"><br>* Special Characters not allowed</br></span>
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-fax-no" class="registration-title">Fax No.</label>
+				</div>
+				<div class="society-office input-field">
+					<input id="companyFaxNo" name="companyFaxNo" type="text" size="20" onkeypress="return IsAlphaNumeric4(event);" onChange="this.value = this.value.toUpperCase();" /> <span id="error4" style="color: Red; display: none"><br>* Special Characters not allowed</br></span>
+				</div>
+			</div>
+		
+			<hr width="100%">
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-correspondence-add" class="registration-title">Correspondence Office<br>Address in Malaysia (if any)</label><br>
+				</div>
+				<div class="correspondence input-field">
+					<input id="caddress1" name="caddress1" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();"><br/>
+					<input id="caddress2" name="caddress2" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();"><br/>
+					<input id="caddress3" name="caddress3" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();">
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-postcode" class="registration-title">Postcode:</label>
+				</div>
+				<div class="postcode input-field">
+					<input id="cpostalCode" name="cpostalCode" class="required digits valid" maxlength="5" onChange="this.value = this.value.toUpperCase();">
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-state" class="registration-title">State:</label>
+				</div>
+				<div class="state input-field">
+					<select  id='cstate' name='cstate' class='state'>
+<option value=''>- PLEASE SELECT -</option>
+<option id='001' value='J' >JOHOR&nbsp;&nbsp;&nbsp;</option>
+<option id='002' value='K' >KEDAH&nbsp;&nbsp;&nbsp;</option>
+<option id='003' value='D' >KELANTAN&nbsp;&nbsp;&nbsp;</option>
+<option id='004' value='M' >MELAKA&nbsp;&nbsp;&nbsp;</option>
+<option id='005' value='N' >NEGERI SEMBILAN&nbsp;&nbsp;&nbsp;</option>
+<option id='006' value='C' >PAHANG&nbsp;&nbsp;&nbsp;</option>
+<option id='008' value='A' >PERAK&nbsp;&nbsp;&nbsp;</option>
+<option id='009' value='R' >PERLIS&nbsp;&nbsp;&nbsp;</option>
+<option id='007' value='P' >PULAU PINANG&nbsp;&nbsp;&nbsp;</option>
+<option id='012' value='S' >SABAH&nbsp;&nbsp;&nbsp;</option>
+<option id='013' value='SK' >SARAWAK&nbsp;&nbsp;&nbsp;</option>
+<option id='010' value='B' >SELANGOR&nbsp;&nbsp;&nbsp;</option>
+<option id='011' value='T' >TERENGGANU&nbsp;&nbsp;&nbsp;</option>
+<option id='014' value='W' >WILAYAH PERSEKUTUAN&nbsp;&nbsp;&nbsp;</option>
+<option id='015' value='LA' >WILAYAH PERSEKUTUAN LABUAN&nbsp;&nbsp;&nbsp;</option>
+<option id='016' value='PJ' >WILAYAH PERSEKUTUAN PUTRAJAYA&nbsp;&nbsp;&nbsp;</option>
+</select>
+				</div>
+			</div>
+			
+			<hr width="100%">
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-correspondence-add-rero" class="registration-title">RE/RO Office<br>Address in Malaysia</label><br>
+				</div>
+				<div class="correspondence input-field">
+					<input id="raddress1" name="raddress1" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();"><br/>
+					<input id="raddress2" name="raddress2" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();"><br/>
+					<input id="raddress3" name="raddress3" maxlength="40" type="text" size="77" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();">
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-postcode" class="registration-title">Postcode:</label>
+				</div>
+				<div class="postcode input-field">
+					<input id="rpostalCode" name="rpostalCode" class="required digits valid" maxlength="5" onChange="this.value = this.value.toUpperCase();">
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-state" class="registration-title">State:</label>
+				</div>
+				<div class="state input-field">
+					<select  id='rstate' name='rstate' class='state'>
+<option value=''>- PLEASE SELECT -</option>
+<option id='001' value='J' >JOHOR&nbsp;&nbsp;&nbsp;</option>
+<option id='002' value='K' >KEDAH&nbsp;&nbsp;&nbsp;</option>
+<option id='003' value='D' >KELANTAN&nbsp;&nbsp;&nbsp;</option>
+<option id='004' value='M' >MELAKA&nbsp;&nbsp;&nbsp;</option>
+<option id='005' value='N' >NEGERI SEMBILAN&nbsp;&nbsp;&nbsp;</option>
+<option id='006' value='C' >PAHANG&nbsp;&nbsp;&nbsp;</option>
+<option id='008' value='A' >PERAK&nbsp;&nbsp;&nbsp;</option>
+<option id='009' value='R' >PERLIS&nbsp;&nbsp;&nbsp;</option>
+<option id='007' value='P' >PULAU PINANG&nbsp;&nbsp;&nbsp;</option>
+<option id='012' value='S' >SABAH&nbsp;&nbsp;&nbsp;</option>
+<option id='013' value='SK' >SARAWAK&nbsp;&nbsp;&nbsp;</option>
+<option id='010' value='B' >SELANGOR&nbsp;&nbsp;&nbsp;</option>
+<option id='011' value='T' >TERENGGANU&nbsp;&nbsp;&nbsp;</option>
+<option id='014' value='W' >WILAYAH PERSEKUTUAN&nbsp;&nbsp;&nbsp;</option>
+<option id='015' value='LA' >WILAYAH PERSEKUTUAN LABUAN&nbsp;&nbsp;&nbsp;</option>
+<option id='016' value='PJ' >WILAYAH PERSEKUTUAN PUTRAJAYA&nbsp;&nbsp;&nbsp;</option>
+</select>
+				</div>
+			</div>
+			
+			<hr width="100%">
+			<p class="hr-note"><b>Note: The person assigned as the contact information will be contacted by Immigration officers on all matters related to the company registration. It is advisable to assign it to the person who created this account with ESD who is knowledgeable about the company information.</b></p>
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-contact-person" class="registration-title">First Name:</label>
+				</div>
+				<div class="firstname input-field">
+					<input id="firstName" name="firstName" type="text" size="50" style="text-transform:uppercase;" onkeypress="return IsAlphaNumeric7(event);" onChange="this.value = this.value.toUpperCase();" /> <span id="error7" style="color: Red; display: none"><br>* Special Characters not allowed</br></span>
+				</div>
+			</div>
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-contact-person" class="registration-title">Last Name:</label>
+				</div>
+				<div class="lastname input-field">
+					<input id="lastName" name="lastName" type="text" size="50" style="text-transform:uppercase;" onkeypress="return IsAlphaNumeric8(event);" onChange="this.value = this.value.toUpperCase();" /> <span id="error8" style="color: Red; display: none"><br>* Special Characters not allowed</br></span>
+				</div>
+			</div>
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-designation" class="registration-title">Designation:</label>
+				</div>
+				<div class="designation input-field">
+					<input id="designation" name="designation" type="text" size="50" style="text-transform:uppercase;" onChange="this.value = this.value.toUpperCase();">
+				</div>
+			</div>
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-contact-no" class="registration-title">Contact No. (Fixed Line):</label>
+				</div>
+				<div class="fixed-line input-field">
+					<input id="contactNo" name="contactNo" type="text" size="20" onkeypress="return IsAlphaNumeric5(event);" onChange="this.value = this.value.toUpperCase();" /> <span id="error5" style="color: Red; display: none"><br>* Special Characters not allowed</br></span>
+				</div>
+			</div>
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-contact-no" class="registration-title">Contact No. (Mobile):</label>
+				</div>
+				<div class="mobile input-field">
+					<input id="mobileNo" name="mobileNo" type="text" size="20" style="text-transform:uppercase;" onkeypress="return IsAlphaNumeric6(event);" onChange="this.value = this.value.toUpperCase();" /> <span id="error6" style="color: Red; display: none"><br>* Special Characters not allowed</br></span>
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-email" class="registration-title">Email:</label>
+				</div>
+				<div class="email input-field">
+					<input id="email" name="email" type="text" size="50" style="text-transform:lowercase;" onChange="return checkEmail(event);" onChange="this.value = this.value.toLowerCase();" /> <span id="error9" style="color: Red; display: none"><br>* Please provide valid email address</br></span>
+				</div>
+			</div>
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-email" class="registration-title">Confirm Email:</label>
+				</div>
+				<div class="confirm-email input-field">
+					<input id="email2" name="email2" type="text" size="50" style="text-transform:lowercase;" onChange="return checkEmail(event);" onChange="this.value = this.value.toLowerCase();" /> <span id="error10" style="color: Red; display: none"><br>* Please provide valid email address</br></span>
+				</div>
+			</div>
+			
+			<hr width="100%">
+			<p class="hr-note"> Kindly create the login ID for the organization.<br>
+				(<i>You can only create one login ID for the organization, and this login ID will be permanent for the organization</i>)</p>
+			
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-id" class="registration-title">Username:</label>
+				</div>
+				<div class="username input-field">
+					<input id="userName" name="userName" type="text" size="30" style="text-transform:lowercase;" onChange="this.value = this.value.toLowerCase();" />
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-password" class="registration-title">Password:</label>
+				</div>
+				<div class="password input-field">
+					<input id="password1" name="password1" type="password" size="20">
+				</div>
+			</div>
+			
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-confirm-password" class="registration-title">Confirm Password:</label>
+				</div>
+				<div class="confirm-password input-field">
+					<input id="password2" name="password2" type="password" size="20">
+				</div>
+			</div>
+		
+			<div class="field">
+				<div class="registration-label">
+					<label for="registration-confirm-password" class="registration-title">Captcha:</label>
+				</div>
+				<div class="captcha input-field">
+				<img src="https://esd.imi.gov.my/esd/extensions/captcha/captcha.php" id="captcha" /><br>
+							<a href="javascript:void();" onClick="
+							    document.getElementById('captcha').src='https://esd.imi.gov.my/esd/extensions/captcha/captcha.php?'+Math.random();
+							    document.getElementById('captcha-form').focus();"
+							    id="change-image">Not readable? Change text.</a><br>
+								<input type="text" name="captchaVerification" id="captchaVerification" autocomplete="off" />
+				</div>
+			</div>
+		</div>
+		<button type="button" class="sicial-submit" onClick="javascript:submitRegistration();">Create Account</button>
+
+</div>		
+
+<div class="step-two" style="display: none;">
+	<h1>Company Account Registration (Step 2 of 6)</h1>
+	<p>We have email the activation link to your registered email address.<br/>
+		Kindly login to your email account and click on the activation link to activate your account.</p>
+</div>
+
+<script type="text/javascript">
+	function submitRegistration(){
+		// alert(rero_type);
+		// exit();
+		$.ajax({
+			type: 'POST',
+			url: '/esd/controllers/RegistrationController.php',
+			data: $('#frmRegister').serialize(),
+			async: false,
+			success: function(data){
+				switch(data){
+					case "1":
+						$(location).attr('href',"success.html");
+						break;
+					default:
+						$(".errorSummary").html(data);
+						$(".errorSummary").show();
+						$("html, body").animate({scrollTop:$(".errorSummary").offset().top - 20}, 'slow');
+						//alert('Error occurred. Please contact ESD System Administrator.');
+						break;
+					}
+					
+				return;
+			},
+			error: function(){
+				alert('Error occurred. Please contact ESD System Administrator.');
+			}
+		});
+	}
+
+	// ***** Function copyAddress *****
+	function chkAddress(p_val) {
+		if (p_val) {
+			document.frmRegister.CADDR1.value = document.frmRegister.ADDR1.value;
+			document.frmRegister.CADDR2.value = document.frmRegister.ADDR2.value;
+			document.frmRegister.CADDR3.value = document.frmRegister.ADDR3.value;
+			document.frmRegister.CPOSTCODE.value = document.frmRegister.POSTCODE.value;
+			document.frmRegister.CSTATE.value = document.frmRegister.STATE.value;
+		} //if
+	} // function
+
+	// ***** Datepicker *****
+	$(function() {
+		$("#ccmRegDate").datepicker({
+			changeMonth: true,
+			changeYear: true,
+			dateFormat: "dd/mm/yy",
+			yearRange: "-100:+0",
+			maxDate: 0
+		});
+	});
+</script>
+
+<script type="text/javascript">
+var specialKeys = new Array();
+	specialKeys.push(8); //Backspace
+	specialKeys.push(9); //Tab
+	specialKeys.push(46); //Delete
+	specialKeys.push(36); //Home
+	specialKeys.push(35); //End
+	specialKeys.push(37); //Left
+	specialKeys.push(39); //Right
+
+	function IsAlphaNumeric(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ( (keyCode == 45) || (keyCode == 47) || (keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+	
+	//society name
+	function IsAlphaNumeric2(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ((keyCode == 38) || (keyCode == 47) || (keyCode == 40) || (keyCode == 41) || (keyCode == 45) || (keyCode == 32) || (keyCode >= 48 && keyCode <= 57) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error2").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+		//tel no
+		function IsAlphaNumeric3(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ((keyCode >= 48 && keyCode <= 57) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error3").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+		//fax no
+		function IsAlphaNumeric4(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ((keyCode >= 48 && keyCode <= 57) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error4").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+		//contact no fixed line
+		function IsAlphaNumeric5(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ((keyCode >= 48 && keyCode <= 57) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error5").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+
+		//contact no mobile
+		function IsAlphaNumeric6(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ((keyCode >= 48 && keyCode <= 57) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error6").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+		//first name
+		function IsAlphaNumeric7(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ((keyCode == 32) || (keyCode == 39) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error7").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+		//last name
+		function IsAlphaNumeric8(e) {
+		var keyCode = e.keyCode == 0 ? e.charCode : e.keyCode;
+		var ret = ((keyCode == 32) || (keyCode == 39) || (keyCode >= 65 && keyCode <= 90) || (keyCode >= 97 && keyCode <= 122) || (specialKeys.indexOf(e.keyCode) != -1 && e.charCode != e.keyCode));
+		document.getElementById("error8").style.display = ret ? "none" : "inline";
+		return ret;
+	}
+</script>
+
+<script type="text/javascript">
+
+function checkEmail() {
+
+    var email = document.getElementById('email');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+    if (!filter.test(email.value)) {
+    //alert('Please provide a valid email address');
+    document.getElementById("error9").style.display = "inline";
+    email.focus;
+    return false;
+ }
+ 	var email = document.getElementById('email2');
+    var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+     if (!filter.test(email.value)) {
+    //alert('Please provide a valid email address');
+    document.getElementById("error10").style.display = "inline";
+    email.focus;
+    return false;
+ }
+}</script>			

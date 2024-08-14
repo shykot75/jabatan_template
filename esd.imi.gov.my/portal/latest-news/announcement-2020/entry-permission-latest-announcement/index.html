@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2020/entry-permission-latest-announcement/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:29:45 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../../../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../../../js/jquery.js"></script>
+	<script src="../../../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../../../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../../../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../../../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../../../css/datepicker.css" rel="stylesheet">
+	<script src="../../../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../../../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../../../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../../../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../../../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../../../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../../css/bootstrapValidator.min.css">
+    <script src="../../../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../../../js/main.js"></script> 
+    <script src="../../../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../../../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../../../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../../../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../../about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../../../about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../../../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../../../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../../../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../../../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../../../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../../../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../../../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../../../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="../../announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../../../faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../../../faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../../../faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="../../../faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="../../../downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../../../index.html" class="crumb" title="portal">portal</a><a href="../../index.html" class="crumb" title="latest-news">latest-news</a><a href="../index.html" class="crumb" title="announcement-2020">announcement-2020</a><a href="index.html" class="crumb" title="entry-permission-latest-announcement">entry-permission-latest-announcement</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+ 
+<div class="notice-to-all-firms page-content-wrapper ">
+	<h2 class="title" style="text-transform:uppercase;">LATEST UPDATE 28 JULY 2020<br> A. ENTRY PERMISSION FOR EXPATRIATES WITH AN ACTIVE PASS AND APPROVED PASS APPLICATION WHO ARE ABROAD<br> B. EXIT MALAYSIA AND RETURN PERMISSION WITH AN ACTIVE PASS WHO ARE IN MALAYSIA</h2>
+	<div class="line"></div>
+	<div class="content">
+		<p>28 July 2020</p>
+		<div class="left">
+			<table width='100%' cellpadding=2>
+    <tr>
+        <td width=10 valign=top>1.</td>
+        <td>This is with reference to the latest announcement made on 25 July 2020 pertaining to the
+Entry Permission for Expatriates AND Permission to Exit and Return to Malaysia. Please find
+the below changes and updates for the following pass categories:<br><br>
+<table border=1 cellpadding=2>
+    <tr>
+    <th>NO</th>
+    <th>PASS TYPE</th>
+    <th>CONDITION</th>
+    </tr>
+    <tr>
+        <td>1.</td>
+        <td>
+
+         <table border = '0'>
+                <tr valign='top'>
+                    <td>a)</td>
+                    <td>Employment Pass Category I (EP I) &
+Residence Pass-Talent
+(RP-T)</td>
+                </tr>
+
+
+                    <tr valign='top'>
+                    <td>b)</td>
+                    <td> Dependants & Foreign
+Maids for (EP I & RP-T)</td>
+                </tr>
+
+                </table>
+
+        </td>
+        <td>
+            <table bprder = '0'>
+                <tr valign='top'>
+                    <td>i.</td>
+                    <td><b><u>EXEMPTED</u> TO OBTAIN ENTRY PERMISSION</b> from
+Director General of Immigration Malaysia (DGIM).</td>
+                </tr>
+
+                    <tr valign='top'>
+                    <td>ii.</td>
+                    <td>Upon arrival to Malaysia, cost of PCR Covid-19 Swab
+Test shall be borne by the applicant.</td>
+                </tr>
+
+                    <tr valign='top'>
+                    <td>iii.</td>
+                    <td>Compulsory to undergo a Fourteen (14) days
+quarantine at a Quarantine Centre stipulated by the
+National Disaster Management Agency (NADMA) and
+Ministry of Health (MOH). The cost of quarantine shall
+be borne by the applicant.</td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>
+
+         <table border = '0'>
+                <tr valign='top'>
+                    <td>a)</td>
+                    <td>Employment Pass
+Category II & III (EP II &
+EP III)</td>
+                </tr>
+
+
+                    <tr valign='top'>
+                    <td>b)</td>
+                    <td>Professional Visit Pass
+(PVP)</td>
+                </tr>
+
+
+                         <tr valign='top'>
+                    <td>c)</td>
+                    <td>Dependants & Foreign Maids for (EP II &
+EPIII)</td>
+                </tr>
+
+                <tr valign='top'>
+                    <td>d)</td>
+                    <td>Long Term Social Visit Pass (LT-SVP) for
+(EP I, EP II, EP III & RP-T)</td>
+                </tr>
+
+                </table>
+        </td>
+        <td valign="middle">
+            <table border = '0'>
+                <tr valign='top'>
+                    <td>i.</td>
+                    <td><b><u>COMPULSORY</u> TO OBTAIN ENTRY PERMISSION</b> from Director General of
+Immigration Malaysia (DGIM)</td>
+                </tr>
+
+                    <tr valign='top'>
+                    <td>ii.</td>
+                    <td>Upon arrival to Malaysia, cost of PCR Covid-19 Swab
+Test shall be borne by the applicant.</td>
+                </tr>
+
+                    <tr valign='top'>
+                    <td>iii.</td>
+                    <td>Compulsory to undergo a Fourteen (14) days
+quarantine at a Quarantine Centre stipulated by the
+National Disaster Management Agency (NADMA) and
+Ministry of Health (MOH). The cost of quarantine shall
+be borne by the applicant.</td>
+                </tr>
+
+            </table>
+        </td>
+    </tr>
+</table><br>
+
+</td>
+    </tr>
+    
+    <tr>
+        <td width=10 valign=top>2.</td>
+        <td>
+            The full latest Guidelines for expatriates and its related passes are as below:
+            <table width='100%'>
+                <tr>
+                    <td width=10 valign=top>A.</td>
+                    <td>Entry Permission for Expatriates with an Active Pass and Approved Pass Application Who
+Are Abroad. Please refer to <a target="_blank" href='../../../pdf/Guideline_expatriate_A_2.pdf'>Guideline for the Entry of Expatriate</a></td>
+                </tr>
+                <tr>
+                    <td width=10 valign=top>B.</td>
+                    <td>Exit Malaysia and Return with an Active Pass Who are in Malaysia. Please refer to <a target="_blank" href='../../../pdf/Guideline_expatriate_B_2.pdf'>Guideline for Exit and Return of Expatriate </a>.</td>
+                </tr>
+               
+            </table>
+        </td>
+    </tr>
+
+    <tr>
+        <td width=10 valign=top>3.</td>
+        <td>All of the permission above in item A and B is to be sent via email to taskforce_esd@imi.gov.my</td>
+    </tr>
+
+    <tr>
+        <td width=10 valign=top>4.</td>
+        <td>Please refer to <a target="_blank" href='../../../pdf/Entry_appendix_A_2.pdf'>Appendix A</a> for a detailed information.</td>
+    </tr>
+    
+    <tr>
+        <td width=10 valign=top>5.</td>
+        <td>Please refer to <a target="_blank" href='../../../pdf/Entry_appendix_B_2.pdf'>Appendix B</a> for a List of Approving and Supporting Agencies.</td>
+    </tr>
+
+    <tr>
+        <td colspan='2' valign=top>
+        
+        </td>
+    </tr>
+</table>
+
+<p>  <i> Note :  The information in this document is subject to change depending on the latest update by the
+relevant Agencies from the Government of Malaysia. </i></p>
+		</div>
+		<div class="right">
+			<div class="bottom">
+				
+<h3>F.A.Q</h3>
+<div class="line"></div> 
+<div class="faq-banner">
+
+<div id="faq-container">
+        <p id="title"></p>
+        <p id="desc"></p>
+        <a href="../../../faq/index.html">read more +</a>
+    </div>
+
+
+  <script>
+        $(document).ready(function() {
+            
+            function displayFAQs(faqs, index) {
+                var title = faqs[index].title;
+                var desc = faqs[index].desc;
+
+                $('#title').html('<b>Q:<br /> ' + title + '</b></p><br />');
+                $('#desc').html('A:<br />' + desc + '');
+                
+            }
+
+            $.ajax({
+                url: '/portal/include/ajax-faq.php',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        var faqs = response.data;
+                        var index = 0;
+                        var faqCount = faqs.length;
+
+                        
+                        displayFAQs(faqs, index);
+
+                       
+                        var timer = setInterval(function() {
+                            index = (index + 1) % faqCount;
+                            displayFAQs(faqs, index);
+                        }, 5000); 
+                    } else {
+                        $('#faq-container').text('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>   
+</div>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../../../index.html">Home</a></li>
+						<li><a class=""  href="../../../about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="../../../employers/index.html">Employers</a></li>
+						<li><a class="" href="../../../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../../news/index.html">Latest News</a></li>
+                        <li><a class="" href="../../../faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2020/entry-permission-latest-announcement/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:30:07 GMT -->
+</html>

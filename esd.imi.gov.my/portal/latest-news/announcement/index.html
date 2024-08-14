@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:15:06 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../../css/datepicker.css" rel="stylesheet">
+	<script src="../../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrapValidator.min.css">
+    <script src="../../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../../js/main.js"></script> 
+    <script src="../../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../../about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="active" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../news/index.html">News</a>
+                        </li>
+						<li class="active" ><a href="index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../../faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../../faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../../faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="../../faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="../../downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../../index.html" class="crumb" title="portal">portal</a><a href="../index.html" class="crumb" title="latest-news">latest-news</a><a href="index.html" class="crumb" title="announcement">announcement</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+<div class="announcement-wrapper page-content-wrapper news">
+	<h2 class="title">announcement</h2>
+	<div class="line"></div>
+	<div class="content">
+		<div class="left">
+			<div class="year-filter">
+				<select name="annyear" onChange="window.document.location.href=this.options[this.selectedIndex].value;" >
+					<option value="https://esd.imi.gov.my/portal/latest-news/announcement/" selected="selected">2024</option>
+					<option value="../announcement-2023/index.html">2023</option>
+					<option value="../announcement-2022/index.html">2022</option>
+					<option value="../announcement-2021/index.html">2021</option>
+					<option value="../announcement-2020/index.html">2020</option>
+					<option value="../announcement-2019/index.html">2019</option>
+                	<option value="../announcement-2018/index.html">2018</option>
+                	<option value="../announcement-2017/index.html">2017</option>
+                	<option value="../announcement-2016/index.html">2016</option>
+				  <option value="../announcement-2015/index.html">2015</option>
+				  <!-- <option value="2014">2014</option>
+				  <option value="2013">2013</option> -->
+				</select>
+			</div>
+			<ul class="list-wraper">
+                            <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">GRADUAL DEPLOYMENT OF ONLINE SUB-PRODUCT SERVICES VIA ESD ONLINE</h1>
+                        <p>08 August 2024</p>
+						<p><p align="justify">As per the announcement on 29 July 2024, the following online Sub-Product services have been successfully redeployed:<br> 1. Transfer of Endorsement (ToE) / Take-up Balance (TuB)<br> 2. Amendment of Approved Application <br> 3. Shorten of Pass <br> With that, we are pleased to announce that the next phase of redeployment has commenced for the online Permission to Study and Permission to Work at a Second Location. They are now available via ESD Online through the Sub-Product menu. </p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-232-gradual-deployment-pts/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NEW APPLICATION FEATURES AND SERVICE FEE FOR EXPATRIATE EMPLOYMENT, DEPENDANT, AND PROFESSIONAL VISIT PASSES EFFECTIVE 01 SEPTEMBER 2024</h1>
+                        <p>01 August 2024</p>
+						<p><p align="justify"> To better meet the needs of employers for expatriates, TalentCorp and its subsidiary MYXpats have introduced a comprehensive online data platform and service-oriented management system. This system aims to efficiently process expatriate-related applications, such as the Employment Pass (EP), the Professional Visit Pass (PVP) and their related passes, within a five-working-day period, in line with our client service commitment.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-231-new-application-features/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">GRADUAL DEPLOYMENT OF ONLINE SUB-PRODUCT SERVICES VIA ESD ONLINE</h1>
+                        <p>29 July 2024</p>
+						<p><p align="justify"> We are pleased to announce that the next phase of redeployment has commenced for the online Shorten of Pass. The online service for Shorten of Pass is now available via ESD Online through the Sub-Product menu.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-229-gradual-deployment/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">OFFICIALLY LAUNCHED: EXPATRIATE SATELLITE CENTRE (ESC) AT TERMINAL 2 KUALA LUMPUR INTERNATIONAL AIRPORT (KLIA)</h1>
+                        <p>29 July 2024</p>
+						<p><p align="justify"> We are pleased to announce that the Expatriate Satellite Centre KLIA Terminal 2 (ESC KLIA2) is now fully operational 24 hours a day, 7 days a week to facilitate the issuance of new Employment Passes, Professional Visit Passes, Dependant Passes, and the Residence Pass-Talent for expatriates.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-230-klia2-launched/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">COMPANIES IN ISKANDAR MALAYSIA TO INITIATE EMPLOYMENT PASS APPLICATIONS VIA XPATS GATEWAY</h1>
+                        <p>24 July 2024</p>
+						<p><p align="justify">We are pleased to announce that effective 25 July 2024, all companies operating in Iskandar Malaysia that require Supporting Letters from Approving Agencies/Regulatory Bodies to apply for new and renewal Employment Pass (EP) must submit their applications through the Xpats Gateway platform at https://xpatsgateway.com.my/.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-228-companies-iskandar/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">GRADUAL DEPLOYMENT OF ONLINE SUB-PRODUCT SERVICES VIA ESD ONLINE</h1>
+                        <p>19 July 2024</p>
+						<p><p align="justify"> We are pleased to announce that the next phase of redeployment has commenced for the online Amendment of Approved Application  . The online service for Amendment of Approved Application  is now available via ESD Online through the Sub-Product menu</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-227-gradual-deployment-amendment/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">IMPROVEMENT INITIATIVE : PERMISSION TO WORK FOR FOREIGN PROFESSIONALS WITH SOCIAL VISIT PASS (PLS@XPATS) FOR EMERGENCY/CRITICAL TASK / WORK</h1>
+                        <p>17 July 2024</p>
+						<p><p align="justify"> Since 3 October 2022, Immigration Department of Malaysia (JIM) has implemented a facility for foreign professionals to apply to Work with maximum of (30) days Social Visit Pass (PLS@XPATS) for emergency/critical professional task/work, from the date of arrival into Malaysia.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-226-pls-xpats/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">GRADUAL DEPLOYMENT OF ONLINE SUB-PRODUCT SERVICES VIA ESD ONLINE</h1>
+                        <p>16 July 2024</p>
+						<p><p align="justify"> Following from the announcement made on 4 July 2024, we are pleased to update that the online Sub-Product services re-deployment will be rolled out in phases, beginning with the Transfer of Endorsement (ToE) / Take-up Balance (TuB).</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-225-gradual-deployment/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">PRIVATE EDUCATION INSTITUTIONS UNDER THE MINISTRY OF HIGHER EDUCATION (MOHE) TO INITIATE EMPLOYMENT PASS APPLICATIONS VIA XPATS GATEWAY</h1>
+                        <p>10 July 2024</p>
+						<p><p align="justify"> We are pleased to announce that effective 10 July 2024, all registered private education institutions that require Supporting Letters from MOHE in applying for new and renewal Employment Pass (EP) must submit their applications through the Xpats Gateway at https://xpatsgateway.com.my/.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-224-mohe-xg-golive/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">SYSTEM DISRUPTION & TEMPORARY ROLLBACK OF ONLINE SUB-PRODUCT TRANSACTIONS VIA ESD ONLINE.</h1>
+                        <p>04 July 2024</p>
+						<p><p align="justify"> We regret to inform you of a temporary disruption to the ESD Online system that began at 8:00 AM on 2 July 2024. Our technical team is diligently working to resolve this issue.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-223-sub-product-rollback/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">INTRODUCING NEW ESD ONLINE FEATURES IN FACILITATING EXPATRIATE PASS PROCESSING, EFFECTIVE 1 JULY 2024</h1>
+                        <p>27 June 2024</p>
+						<p><p align="justify"> We are pleased to announce the implementation of new online applications for sub-product services to better facilitate and meet employers needs for their expatriates. The deployment of these new features will take effect from 1 July 2024.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-222-sub-product-esd/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS OPEN DAY 2024</h1>
+                        <p>25 June 2024</p>
+						<p><p align="justify"> Referring to our announcement on 25 June 2024, we are pleased to inform you that Malaysia Expatriate Services Centre (MYXpats) will be organising a series of Open Days in 2024. The MYXpats Open Day aims to keep everyone informed and updated on matters related to the Expatriate Services Division (ESD), Employment Pass (EP), Professional Visit Pass (PVP), and Residence Pass-Talent (RP-T), as well as addressing other Immigration and Expatriate related issues.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-open-day-2-2024/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MALAYSIA DIGITAL (MD) AND ICT COMPANIES UNDER MALAYSIA DIGITAL ECONOMY CORPORATION (MDEC) TO INITIATE EMPLOYMENT PASS APPLICATIONS VIA XPATS GATEWAY.</h1>
+                        <p>02 May 2024</p>
+						<p><p align="justify">Referring to the announcement "Submission of Employment Pass Application Via Single Window - Xpats Gateway" published by the Malaysia Digital Economy Corporation (MDEC) on <b>24 April 2024</b> through their official website, please note that effective from 24 April 2024.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-220-mdec-xg/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS SURVEY: HELP US TO IMPROVE OUR SERVICES AND YOUR EXPERIENCE</h1>
+                        <p>24 April 2024</p>
+						<p><p align="justify">We are pleased to inform that the MYXpats Centre client experience survey is open. We seek your feedback regarding your experiences with MYXpats Centre to help us further improve our existing services, practices, and processes in order to serve you better.
+</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-219-myxpats-survey-open/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE OF PAYMENT SYSTEM INTERRUPTION</h1>
+                        <p>29 March 2024</p>
+						<p><p align="justify">We regret to inform you that an unplanned system interruption has occurred. Users may experience delays in status updates after finalising transactions on the Immigration Payment Online System. This interruption may affect the endorsement process.</p>
+</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-217-payment-system-interuption/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS CENTRE HARI RAYA 2024 OPERATING HOURS</h1>
+                        <p>29 March 2024</p>
+						<p><p align="justify">In conjunction with the Hari Raya Aidilfitri festivities, please be informed that the MYXpats Centre (Surian Tower and Penang) will be closed on 10 - 11 April 2024. During this period, the MYXpats Centre counter, telephone and email services will not be available to clients.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-218-myxpats-centre-raya/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS SURVEY: HELP US TO IMPROVE OUR SERVICES AND YOUR EXPERIENCE</h1>
+                        <p>20 March 2024</p>
+						<p><p align="justify">We are pleased to inform that the MYXpats Centre client experience survey has been extended to<b> 19 April 2024</b>. We seek your feedback regarding your experiences with MYXpats Centre to help us further improve our existing services, practices, and processes in order to serve you better.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-216-myxpats_survey_extend/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">OPERATION HOURS DURING RAMADAN 2024</h1>
+                        <p>08 March 2024</p>
+						<p><p align="justify">With reference to the announcement made on 8 March 2024, kindly note the MYXpats Centre operation hours during the month of Ramadan, from Tuesday 12 March 2024 to Tuesday 9 April 2024, as stated in the announcement page </p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-215-ramadan-operation-hour/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS SURVEY: HELP US TO IMPROVE OUR SERVICES AND YOUR EXPERIENCE</h1>
+                        <p>21 February 2024</p>
+						<p><p align="justify">We are pleased to inform that the MYXpats Centre client experience survey has been extended to<b> 20 March 2024</b>. We seek your feedback regarding your experiences with MYXpats Centre to help us further improve our existing services, practices, and processes in order to serve you better.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-214-myxpats_survey_extend/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">INCREASE IN SALES AND SERVICE TAX (SST) RATE EFFECTIVE 1 MARCH 2024</h1>
+                        <p>05 February 2024</p>
+						<p><p align="justify">With reference to the <a href="https://mysst.customs.gov.my/" target="_blank">announcement</a> made by the Royal Malaysian Customs Department, the Sales and Service Tax (SST) rate will <b>increase from 6% to 8%</b> effective <b>1 March 2024</b>, which applies to the Expatriate Services Division (ESD) Application fee for all types of passes.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-213-increase-tax-rate/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MALAYSIA EXPATRIATE TALENT SERVICE CENTRE (MYXPATS): HELP US TO IMPROVE OUR SERVICES AND YOUR CUSTOMER EXPERIENCE</h1>
+                        <p>18 January 2024</p>
+						<p><p align="justify">We are pleased to share that the Malaysia Expatriate Talent Service Centre (MYXpats Centre) is running a customer experience survey from<b> 17th January to 17th February 2024</b>. Through this survey, we aim to obtain your feedback regarding your experiences with MYXpats Centre. The survey results will be used for us to further improve on our existing services, practices, and processes.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-myxpats-survey-2023/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS OPEN DAY 2024</h1>
+                        <p>16 January 2024</p>
+						<p><p align="justify"> Referring to our <a href="../announcement-2023/myxpats-open-day-2024/index.html" target="_blank">announcement</a> on 16 January 2024, we are pleased to inform you that Malaysia Expatriate Services Centre (MYXpats) will be organising a series of Open Days in 2024. The MYXpats Open Day aims to keep everyone informed and updated on matters related to the Expatriate Services Division (ESD), Employment Pass (EP), Professional Visit Pass (PVP), and Residence Pass-Talent (RP-T), as well as addressing other Immigration and Expatriate related issues.</p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-open-day-2024/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS CENTRE HALF-DAY CLOSURE ON 19TH JANUARY 2024</h1>
+                        <p>15 January 2024</p>
+						<p><p align="justify"> Referring to our <a href="../announcement-2023/announcement-myxpats-center-half-day-closure/index.html" target="_blank">announcement</a> on 15 January 2024, Please be informed that the <b>MYXpats Centre Surian Tower</b> will be closed for half a day on Friday, <b>19th January 2024</b>, from <b>12:15 PM to 5:00 PM</b>. </p></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-myxpats-center-half-day-closure/index.html">read more</a>
+                    				</li>
+                			</ul> 
+		</div>
+		<div class="right"> 
+			<div class="top">
+				 <h3>TESTIMONIALS</h3>
+				 <div class="line"></div>
+				 <div class="testimonials-banner">
+				 	  <p>“Thanks to these wonderful neighbours, our culture shock was short-lived.”<a href="../../about-us/testimonials/index.html">read more +</a></p>
+					  <img src="../../images/TESTI11-William-Donald-Duncan.jpg" />
+				 </div>
+			</div>
+			<div class="bottom">
+				
+<h3>F.A.Q</h3>
+<div class="line"></div> 
+<div class="faq-banner">
+
+<div id="faq-container">
+        <p id="title"></p>
+        <p id="desc"></p>
+        <a href="../../faq/index.html">read more +</a>
+    </div>
+
+
+  <script>
+        $(document).ready(function() {
+            
+            function displayFAQs(faqs, index) {
+                var title = faqs[index].title;
+                var desc = faqs[index].desc;
+
+                $('#title').html('<b>Q:<br /> ' + title + '</b></p><br />');
+                $('#desc').html('A:<br />' + desc + '');
+                
+            }
+
+            $.ajax({
+                url: '/portal/include/ajax-faq.php',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        var faqs = response.data;
+                        var index = 0;
+                        var faqCount = faqs.length;
+
+                        
+                        displayFAQs(faqs, index);
+
+                       
+                        var timer = setInterval(function() {
+                            index = (index + 1) % faqCount;
+                            displayFAQs(faqs, index);
+                        }, 5000); 
+                    } else {
+                        $('#faq-container').text('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+			</div>
+			<div class="backtop-desktop" style="display: ;">
+				<a href="#0" class="cd-top">Back Top</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>   
+</div>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../../index.html">Home</a></li>
+						<li><a class=""  href="../../about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="../../employers/index.html">Employers</a></li>
+						<li><a class="" href="../../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../news/index.html">Latest News</a></li>
+                        <li><a class="" href="../../faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:15:08 GMT -->
+</html>

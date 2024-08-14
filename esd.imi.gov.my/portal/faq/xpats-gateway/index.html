@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/faq/xpats-gateway/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:16:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../../css/datepicker.css" rel="stylesheet">
+	<script src="../../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrapValidator.min.css">
+    <script src="../../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../../js/main.js"></script> 
+    <script src="../../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../../about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../latest-news/news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="../../latest-news/announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../myxpats/index.html">MYXpats</a></li>
+                        <li class="active" ><a href="index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="../../downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../../index.html" class="crumb" title="portal">portal</a><a href="../index.html" class="crumb" title="faq">faq</a><a href="index.html" class="crumb" title="xpats-gateway">xpats-gateway</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+
+<div class="faq-box">
+	<form class="search" name="search">
+
+		<button class="btn-faq" onclick="performSearch()"><img class="faq-icon" src="../../images/glass.png" /></button>
+		<input type="text" class="input-faq" placeholder="Type to Search..." name='query' id='query2'>
+	</form>
+
+	</div>
+<div class="faq-wrapper page-content-wrapper">
+	<h2 class="title">FAQs – XPATS GATEWAY &nbsp;&nbsp;<a class="faq-registration-icon" href="../../pdf/GCOMMS-FAQ-About-XPATS-GATEWAY.pdf" target="_blank"><img class="print-icon" src="../../images/print-icon.png" title="Download PDF"/></h2></a>
+	<div class="line"></div>
+	<div class="content">
+		<div class="left">
+		
+			<h5 style='margin-bottom:2%'>About XPATS GATEWAY</h5>
+				
+			<ul>
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>1. What is the Xpats Gateway?</h3>
+					<p style='margin-top:-2%'><p>A seamless, end-to-end solution that enables communication with relevant partner agencies throughout the application process, ensuring a smooth and hassle-free experience for both applicants and partner agencies. All decisions are issued electronically via Xpats Gateway, allowing for more efficient processing by partner agencies and well-time approvals. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>2. How to login to Xpats Gateway?</h3>
+					<p style='margin-top:-2%'><p> <b>ESD companies:</b><br> The Employer can access Xpats Gateway via the ESD Online landing page (esd.imi.gov.my) and click on the Xpats Gateway icon. To log in to Xpats Gateway, use the same login ID and password that is registered on ESD Online. </p> <p> <b>MDEC companies:</b><br> The Employer can access Xpats Gateway via the ESD Online landing page (esd.imi.gov.my) and click on the Xpats Gateway icon. To log in to Xpats Gateway, use the same login credentials as the MDEC Expats System. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>3. Can an Employer apply for the Support Letter via Xpats Gateway without
+an ESD account?
+</h3>
+					<p style='margin-top:-2%'><p>The Employer is required to register for an account on ESD Online to access Xpats Gateway. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>4. Can I request for a Support Letter physically from the respective Agencies?
+</h3>
+					<p style='margin-top:-2%'><p>The Employer must request a Support Letter from the respective Agencies via Xpats Gateway effective 15 June 2023. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>5. Do all expatriates require a Support Letter from the Agencies?</h3>
+					<p style='margin-top:-2%'><p>Support Letters are required for employers that are under the purview of the respective Agencies</p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>6. Must all applications under MDECs purview be submitted through the Xpats Gateway?</h3>
+					<p style='margin-top:-2%'><p>Effective 24 April 2024, all new and renewal applications for Employment Pass (EP) must be submitted through the Xpats Gateway at <a href="https://xpatsgateway.com.my/">https://xpatsgateway.com.my</a>.</p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>7. Will the expatriate application be automatically approved once the Employer received the Support
+Letter?
+</h3>
+					<p style='margin-top:-2%'><p>Applications are required to be submitted and processed via ESD Online, and all application approvals are subject to the decision of the Immigration Department of Malaysia. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>8. What are the documents required to apply for the Support Letter?</h3>
+					<p style='margin-top:-2%'><p>Employer can refer to the respective Agencies for the documents required. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>9. How to check the status of the Support Letter?</h3>
+					<p style='margin-top:-2%'><p>Employer can check the status of the Support Letter application via Xpats Gateway. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>10. Who is the decision maker
+for the Support Letter?
+</h3>
+					<p style='margin-top:-2%'><p>The decision for the Support Letter is subject to the respective Agency </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>11. Is a Support Letter required for Professional Visit Pass (PVP) applications?</h3>
+					<p style='margin-top:-2%'>				<p>A support letter is required for the PVP application under <b>two (2) sectors</b> as per the listing below:</p><ul class="sub-list" > <li>1.	Support Letter from Civil Aviation Authority of Malaysia (CAAM) for <b>Aviation</b>.</li> <li>2. Support Letter from the Department of Mineral & Geoscience (JMG) for <b>Mining</b>.</li></ul><p>Employers can apply for a Support Letter directly with the respective agencies. The Support Letter must be uploaded to ESD Online (<a href="http://esd.imi.gov.my/" target="_blank">esd.imi.gov.my</a>) during the submission of the PVP application.</p><p>PVP application other than the above does not require a Support Letter.</p>
+</p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>12. What is company tiering?</h3>
+					<p style='margin-top:-2%'><h3>What is the key indicator to determine a company tiering?</h3><p>It is a formulated tiering system in ESD Online which has been in practice since 2017 internally by the Expatriate Services Division (ESD). The tiering system will auto populate the tiering of companies from Tier 1 (highest) to Tier 5 (lowest). </p><p>ESD Online is an integrated system with the Companies Commission of Malaysia (SSM), Inland Revenue Board of Malaysia (LHDN), Immigration system and accessed by Royal Malaysia Police (PDRM). </p><p>Based on the information extracted from SSM, companies are ranked and calculated by the system according to the 5 key indicators: </p><ul class="sub-list" > <li>- Twelfth Malaysia Plan (RMK-12)</li> <li>- Company Lifecycle Stage</li> <li>- Revenues</li> <li>- Issued Capital</li> <li>- Track Record</li> </ul></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>13. What type of company falls under Fast Track and Normal Track?</h3>
+					<p style='margin-top:-2%'><p></p><ul class="sub-list" ><li>-	Fast Track: Companies in Tier 1, Tier 2 and Critical Sectors</li><li>-	Normal Track: Companies between Tier 3 to Tier 5</li></ul></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>14. What is the Support Letter processing charter time?</h3>
+					<p style='margin-top:-2%'>					<p></p><ul class="sub-list"><li>-	Fast Track: within 3 working days.</li><li>-	Normal Track: within 10 working days.</li></ul><br><p>The following Agencies are excluded from the client charter:</p><ul class="sub-list"><li>1. Malaysia Nursing Board, Ministry of Health (MOH)</li><li>2. Allied Health Science Division, Ministry of Health (MOH)</li></ul>
+</p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>15. What is critical sector?</h3>
+					<p style='margin-top:-2%'><p>Companies that are identified by the respective agency as a critical sector are based on the company's projects, investment value, niche skills and technologies, and newly critical industries in the current market. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>16. How can I view my company tiering?</h3>
+					<p style='margin-top:-2%'><p>The company tiering will be listed in the company profile in ESD Online effective 15 June 2023. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>17. The Primary Sector or Agency which was selected is incorrect. Who should I contact if I want to change the information?</h3>
+					<p style='margin-top:-2%'><p>The employer can contact MYXpats Helpdesk at <a href=" mailto:helpdesk@myxpats.com.my " target="_blank"> helpdesk@myxpats.com.my </a> or +603-7839 7171</p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>18. If I am unsure of my Primary Sector or Agency, who should I contact to obtain the information?</h3>
+					<p style='margin-top:-2%'><p>The employer can contact MYXpats Helpdesk at <a href=" mailto:helpdesk@myxpats.com.my " target="_blank"> helpdesk@myxpats.com.my </a> or +603-7839 7171</p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>19. I have received a Support Letter via Xpats Gateway. What is the next step?</h3>
+					<p style='margin-top:-2%'><p>Log in to ESD Online (<a href="http://esd.imi.gov.my/" target="_blank">esd.imi.gov.my</a>). Click on the "List of Supporting Letter Application"  tab. Complete your employment pass application for final approval by the Immigration Department of Malaysia.</p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>20. What is the validity of the Support Letter?</h3>
+					<p style='margin-top:-2%'><p>The validity of a Support Letter is six (6) months upon issuance date. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>21. Can we use the same Support Letter for the pass renewal?</h3>
+					<p style='margin-top:-2%'><p>The Support Letter is only for one-time use per application in ESD Online. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>22. Is there any quota/-projection to apply for Support Letter per Employer?</h3>
+					<p style='margin-top:-2%'><p>There is no requirement to apply for quota or
+projection for a Support Letter. </p>
+</p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>23. Is there any cooling period to re-apply if the application is Not Supported?</h3>
+					<p style='margin-top:-2%'><p>There is no cooling period to re-apply for a new
+Support Letter. </p>
+</p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>24. Is there any limitation to re-apply the Support Letter if the application has not been supported?</h3>
+					<p style='margin-top:-2%'><p>There is no time limitation of the Support Letter application. Employer can proceed to re-apply for a Support Letter from the respective Agencies</p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>25. If the Support Letter application is Not Supported, can I proceed for an appeal?</h3>
+					<p style='margin-top:-2%'><p>The company can proceed to reapply for a Support Letter
+for a new Support Letter application. </p>
+</p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>26. How do I cancel the Support Letter application in Xpats Gateway?</h3>
+					<p style='margin-top:-2%'><p>For cancellation of the Support Letter application, please email to <a href=" mailto:helpdesk@myxpats.com.my " target="_blank"> helpdesk@myxpats.com.my </a></p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>27. If my company is not under the purview of any Agency, do I need to apply for a Support Letter?</h3>
+					<p style='margin-top:-2%'><p>If the company is in other sector as per listing below and received MIDA's Confirmation Letter for Exemption from Manufacturing License (if applicable);</p> <ul class="sub-list" > <li>1. Business Services</li> <li>2. Wholesales & Retails</li> <li>3. Oil, Gas & Energy</li> <li>4. Logistics</li> <li>5. Electrical & Electronics</li> <li>6. Automotive</li> </ul> <p>The employer can proceed to directly apply for Employment Pass application in ESD online. The Expatriate Committee and Immigration reserves the right to request for a Support Letter, if necessary.</p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>28. If I still have a valid Support Letter granted before 15 June 2023, do I need to apply the Support Letter?</h3>
+					<p style='margin-top:-2%'><p>The employer can proceed to submit the application and attach the Support Letter granted before 15 June 2023 in ESD online if it is still valid. </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>29. Do I need prior approval from the Department of Labour Peninsular Malaysia and MYFutureJobs PERKESO for Support Letter?</h3>
+					<p style='margin-top:-2%'><p>Yes, employers are required to obtain the prior approval from Department of Labour Peninsular Malaysia and MYFutureJobs PERKESO to apply for the Support Letter from respective Agency </p></p>
+
+
+				
+							<li>
+					<h3 style='margin-bottom:-2%; margin-top:-2%'>30. If there is any issue, to whom do we contact for any assistance/ support/ inquiries?</h3>
+					<p style='margin-top:-2%'><p>For enquiries related to applications, please contact the respective Agencies. The contact information is available on Xpats Gateway (Contact Us). </p> <p>For technical and other matters, please contact <a href=" mailto:helpdesk@myxpats.com.my " target="_blank"> helpdesk@myxpats.com.my </a> or +603-7839 7171</p></p>
+
+
+				
+						
+				
+			<br />
+			
+		</div>
+		<div class="right">
+		<div class="topr text-prompter-container">
+		
+			<div class="text-prompter" >
+			<h3 class="text" style='font-size: 18px; line-height: 24px;'><b>F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024			&nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 
+			&nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024			&nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024			&nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024			&nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024 &nbsp; F.A.Q Latest Update: 10/08/2024		</b></h3>
+	</div>
+			
+			</div>
+			<div class="bottom">
+				
+<h3>F.A.Q</h3>
+<div class="line"></div> 
+<div class="faq-banner">
+
+<div id="faq-container">
+        <p id="title"></p>
+        <p id="desc"></p>
+        <a href="../index.html">read more +</a>
+    </div>
+
+
+  <script>
+        $(document).ready(function() {
+            
+            function displayFAQs(faqs, index) {
+                var title = faqs[index].title;
+                var desc = faqs[index].desc;
+
+                $('#title').html('<b>Q:<br /> ' + title + '</b></p><br />');
+                $('#desc').html('A:<br />' + desc + '');
+                
+            }
+
+            $.ajax({
+                url: '/portal/include/ajax-faq.php',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        var faqs = response.data;
+                        var index = 0;
+                        var faqCount = faqs.length;
+
+                        
+                        displayFAQs(faqs, index);
+
+                       
+                        var timer = setInterval(function() {
+                            index = (index + 1) % faqCount;
+                            displayFAQs(faqs, index);
+                        }, 5000); 
+                    } else {
+                        $('#faq-container').text('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+			</div>
+			<div >
+				<br>
+				<p style='color: #009bb5'>For a comprehensive FAQ by the Department of Labour Peninsular Malaysia (JTKSM) and MYFutureJobs, please visit:</p>
+					
+						<p>1.	<a href='https://www.eppax.gov.my/eppax/portal/images/manual/FAQ_EXPATRIATE.pdf' style='text-decoration:underline' target="_blank">JTKSM</a></p>
+						<p>2.	<a href='https://www.perkeso.gov.my/pengiklanan-mufuturejjobs-bagi-penggajian-pegawai-dagang.html' style='text-decoration:underline' target="_blank">MYFutureJobs</a></p>
+				<br>
+				<p style='color: #009bb5'>Useful Information:</p>
+				<p>1.	<a href='../../pdf/xpats-gateway-manual.pdf' style='text-decoration:underline'  target="_blank">Xpats Gateway User Manual</a></p>
+				<p>2.	<a href='../../pdf/Xpats-Gateway-User-Manual-%5bMDEC%5d.pdf' style='text-decoration:underline'  target="_blank">Xpats Gateway User Manual (MDEC)</a></p>
+
+			</div>
+			<div class="backtop-desktop" style="display: ;">
+				<a href="#0" class="cd-top">Back Top</a>
+			</div>
+		</div> 
+		</div> 
+		<div style="clear: both;"></div>
+	</div>
+</div>
+
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+  var containerWidth = document.querySelector('.right').offsetWidth;
+  var textWidth = document.querySelector('.text-prompter .text').offsetWidth;
+  var animationDuration = (textWidth + containerWidth) * 30; // Adjust speed as needed
+
+  document.querySelector('.text-prompter').style.width = textWidth + 'px';
+
+  function animateTextPrompter() {
+    var prompterElement = document.querySelector('.text-prompter');
+    prompterElement.style.transform = 'translateX(' + containerWidth + 'px)';
+    prompterElement.animate([
+      { transform: 'translateX(' + containerWidth + 'px)' },
+      { transform: 'translateX(-' + textWidth + 'px)' }
+    ], {
+      duration: animationDuration,
+      easing: 'linear',
+      iterations: Infinity
+    });
+  }
+
+  animateTextPrompter();
+});
+
+</script>
+<script>
+        function performSearch() {
+            var searchQuery = document.getElementById("query").value;
+            window.location.href = "index0f15.html?query=" + encodeURIComponent(searchQuery);
+        }
+</script>
+
+
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../../index.html">Home</a></li>
+						<li><a class=""  href="../../about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="../../employers/index.html">Employers</a></li>
+						<li><a class="" href="../../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../../latest-news/news/index.html">Latest News</a></li>
+                        <li><a class="" href="../index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/faq/xpats-gateway/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:16:35 GMT -->
+</html>

@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2015/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:21:12 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>ESD</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+	<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+	
+	<!-- Include Jquery -->
+	<script src="../../js/jquery.js"></script>
+	<script src="../../js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="../../css/jquery-ui.css"> 
+	
+	<!-- Include Bootstrap -->
+	<link rel="stylesheet" href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" >
+	<link href="../../js/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="../../js/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<!-- <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> -->
+    
+    <!-- Include Bootstrap datepicker -->
+	<link href="../../css/datepicker.css" rel="stylesheet">
+	<script src="../../js/bootstrap-datepicker.js"></script>
+	
+	<!-- Include Fancybox -->
+	<script type="text/javascript" src="../../js/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="../../js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+	
+	<!-- Include CSS -->
+	<link rel="stylesheet" type="text/css" href="../../css/styles2.css">
+	<link rel="stylesheet" type="text/css" href="../../css/mobile.css">
+	
+	<!-- Include Slideer -->
+    <script src="../../js/ie10-viewport-bug-workaround.js"></script>
+    <script type="text/javascript" src="../../js/jssor.slider.mini.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrapValidator.min.css">
+    <script src="../../js/bootstrapValidator.min.js"></script>
+
+    <!-- Include Back to top -->
+    <script src="../../js/main.js"></script> 
+    <script src="../../js/modernizr.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){	
+			$(window).on('load',function(){
+				$('#autopopup').modal('show');
+			});
+			
+			// Detact height
+			var wHeight = $(window).height();
+			$( ".mobile-menu" ).click(function() { 
+			    $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			    $( ".overlayheight" ).toggle();
+				$( ".mobile-menu h4.white" ).toggleClass('green');
+			});
+			 
+			$( ".overlayheight" ).click(function() {
+			   $( ".menu-wrapper ul.main-menu" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".overlayheight" ).hide();
+			   $( ".mobile-menu h4.white" ).toggleClass('green');
+			}); 
+	
+			$(".menu-top .right ul").on('click', 'li', function(e){
+			    $('.menu-top .right ul li').removeClass('active');
+			    $(this).addClass('active');
+			});
+			
+			$( ".menu-top .right ul li.login" ).click(function() {
+			   $( ".login-wrapper" ).toggle("slide", { direction: "up" }, 700);
+			   $( ".search-wrapper" ).hide();
+			}); 
+			
+			$( ".menu-top .right ul li.search" ).click(function() {
+			   $( ".search-wrapper" ).toggle("slide", { direction: "up" }, 300);
+			   $( ".login-wrapper" ).hide();
+			});
+			
+			$('.datepicker').datepicker()
+			
+			// Menu
+		    $(".main-menu li").hover(function () { 
+		        $(this).children("ul.sub-menu").show();
+		    }, function () {
+		        $(this).children("ul.sub-menu").hide();
+		    });
+		   
+		    $( "ul.main-menu li" ).has( "li.active" ).addClass( "active" );
+		    $( "ul.main-menu > li.active " ).find( ".sub-menu" ).addClass( "show-sub" );
+			// var pathname = window.location.pathname; // Returns path only
+			// var url      = window.location.href;     // Returns full URL
+			// $( "ul.main-menu li" ).click(function() {
+			    // if (pathname === url) {
+					// $( "ul.main-menu li" ).addClass( "active" );
+				// };
+			// });  
+	
+			 // $(".main-menu li").each(function(){
+		        // if($(this).attr("href")==pathname)
+		            // $(this).addClass("active");
+		    // })
+			// console.log(x);
+			// http://stackoverflow.com/questions/406192/get-current-url-in-javascript
+			
+
+			// Load more
+		    size_li = $("#myList li").size();
+		    x=3;
+		    
+		    $("#myList li").hide();
+		    $('#myList li:lt('+x+')').show();
+		    
+		    $('#loadMore').click(function () {
+		        x= (x+3 <= size_li) ? x+3 : size_li;
+		        $('#myList li:lt('+x+')').show();
+		        $('#showLess').show();
+		        if(x == size_li){
+		            $('#loadMore').hide();
+		        }
+		    });
+			
+			//alert login message
+					 
+		});
+		
+		function formTab(tab){
+			$('.choose-form-content .form-desktop').hide();	
+			$('.'+tab+'-detail').show();
+		}
+	</script>
+</head>
+	
+<body>
+	<div class="main-wrapper cd-container">
+		<div class="menu-wrapper">
+						<div class="menu-top">
+				<div class="left">
+					<div class="logo"></div>
+					<div class="esd-title">
+						<h1>Expatriate<br />Services<br />Division</h1>
+						<h4>Bahagian Khidmat Ekspatriat</h4>
+						<small>IMMIGRATION DEPARTMENT OF MALAYSIA</small>
+					</div>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="login">Login</li>
+						<li style="pointer-events: none; cursor: default;">/</li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+						<!-- <li>/</li>
+						<li class="search">Search</li> -->
+						<div style="clear: both;"></div>
+					</ul>
+					<div class="search-wrapper" style="display: none;">
+						<form>
+							<input type="text" name="search" placeholder="SEARCH">
+							<input type="submit" value="Search">
+							<div style="clear: both;"></div>
+						</form>
+					</div>
+					<div class="login-wrapper" style="display: none;">
+						<form name="frmLogin2" id="frmLogin2" method="post" action="https://esd.imi.gov.my/esd/controllers/AccessController.php">
+							<input type="hidden" name="access" id="access" value="login">
+							<input type="text" name="username" id="username" placeholder="LOGIN ID" autocomplete="false" required>
+							<br>
+							<input type="password" name="password" id="password" placeholder="PASSWORD" autocomplete="false" required>
+							<br>
+							<a href="../../forgot-password/index.html">Forgot password?</a>
+							 <input type="submit" value="Log In">
+													</form>
+						<p class="note">
+							Enter your Login ID and Password to access the ESD system.<br />
+							If your company does not have a Login ID, please Register.
+						</p>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div class="overlayheight" style="display: none;"></div>
+			<div class="mobile-menu rmm-button"  style="display: none;">
+				<h4 class="white">Menu</h4>
+				<div class="menu-line">
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+					<span>&nbsp;</span>
+				</div>
+				<div style="clear: both;"></div>
+			</div> 
+			<ul class="main-menu" style="display: ;">
+				<li class=""><a href="../../index.html">home</a></li>
+				<li class="" ><a style=" cursor: default;" href="#">About Us</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../about-us/esd/index.html">ESD</a></li>
+						<!-- <li class="" ><a href="about-us/testimonials">Testimonials</a></li> -->
+						<li class="" ><a href="../../about-us/contact-us/index.html">Contact Us</a></li>
+					</ul> 
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Employers</a>  
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../../employers/index.html">Overview</a></li>
+						<li class="register "><a href="../../employers/registration/index.html">Register</a></li>
+					</ul>
+				</li>
+				<li class="" ><a style=" cursor: default;" href="#">Expatriates</a>
+					<ul class="sub-menu" style="display: none ;"> 
+						<li class="" ><a style=" cursor: default;" href="#">MYXpats</a>
+						    <ul class="sub-menu three" style="display: none ;">
+								<li class="" ><a href="../../expatriates/myxpats/index.html">Overview </a></li>
+								<li class="" ><a href="../../expatriates/myxpats/key-services/index.html">Key Services </a>
+									<ul class="sub-menu four" style="display: none ;">
+										<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/index.html">Employment Pass</a>
+											<ul class="sub-menu five" style="display:  none ;">											
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/dependant-pass/index.html">Dependant Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/long-term-social-visit-pass/index.html">Long-Term Social Visit Pass</a></li>
+												<li class="" ><a href="../../expatriates/myxpats/key-services/employment-pass/social-visit/index.html">Social Visit (Temporary Employment) - Foreign Maid</a></li>
+											</ul>
+										</li>
+										<li class="" ><a href="../../expatriates/myxpats/key-services/professional-visit-pass/index.html">Professional Visit Pass</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>		
+				<li class="" ><a style=" cursor: default;" href="#">Latest News</a>
+					<ul class="sub-menu" style="display: none ;">
+						<li class="" ><a href="../news/index.html">News</a>
+                        </li>
+						<li class="" ><a href="../announcement/index.html">Announcement</a>
+							<!--
+                            <ul class="sub-menu three" style="display: none ;">
+                            	<li class="" ><a href="latest-news/announcement/message-from-the-director-general-of-immigration-malaysia/">Message from the Director General</a></li>
+                                <li class="" ><a href="latest-news/announcement/message-from-the-chief-executive-officer-of-talentcorp/">Message from the Chief Executive Officer</a></li>
+							 	<li class="" ><a href="latest-news/announcement/roll-out-session/">Roll Out Session </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-firms/">Notice to all firms </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-professional-visit-pass-application/">Notice of Professional<br />Visit Pass Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-renewal-of-employment-pass/">Notice of Renewal of Employment Pass </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-dependent-application/">Notice of Dependent Application </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-of-esd-closure/">Notice of ESD Closure </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-third-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-second-phase/">Notice to all companies </a></li>
+								<li class="" ><a href="latest-news/announcement/notice-to-all-companies-in-the-oil-gas-energy-sectors/">Notice to all companies in the oil, gas & energy sectors </a></li>	
+							</ul>
+                            -->
+						</li>
+                        <!-- <li class="" ><a href="latest-news/newsletter/">Newsletter</a></li> -->
+						<!-- <li class="" ><a href="latest-news/publications/">Publications</a></li> -->
+					</ul>
+				</li>
+				<li class="" ><a style="width: 75px;" href="../../faq/index.html">FAQ</a> 
+					<ul class="sub-menu" style="display: none; left: -19px; width: 110px;">
+						<li class="" ><a href="../../faq/esd-company-registration/index.html">ESD – Company Registration </a></li>
+						<li class="" ><a href="../../faq/myxpats/index.html">MYXpats</a></li>
+                        <li class="" ><a href="../../faq/xpats-gateway/index.html">Xpats Gateway</a></li>
+					</ul> 
+				</li>
+				<li class=""><a href="../../downloads/index.html">downloads</a></li>
+				<div style="clear: both;"></div>
+			</ul>
+		</div>
+		<div class="content-wrapper">
+        		<div class="breadcrumb-wrapper ">
+		<a href="https://esd.imi.gov.my/" class="crumb" title="home">home</a><a href="../../index.html" class="crumb" title="portal">portal</a><a href="../index.html" class="crumb" title="latest-news">latest-news</a><a href="index.html" class="crumb" title="announcement-2015">announcement-2015</a>	
+			</div>
+			
+		
+        		
+
+
+<script>
+function do_login() {
+	if ( (document.frmLogin2.username.value == "") || (document.frmLogin2.password.value=="") ) {
+		alert('Please enter Login ID and Password !');
+		return;
+	} else {
+		document.frmLogin2.submit();
+	}
+}
+</script>
+
+
+<div class="announcement-wrapper page-content-wrapper news">
+	<h2 class="title">announcement</h2>
+	<div class="line"></div>
+	<div class="content">
+		<div class="left">
+			<div class="year-filter">
+				<select name="annyear" onChange="window.document.location.href=this.options[this.selectedIndex].value;" >
+					<option value="../announcement/index.html">2024</option>
+					<option value="../announcement-2023/index.html">2023</option>
+					<option value="../announcement-2022/index.html">2022</option>
+					<option value="../announcement-2021/index.html">2021</option>
+					<option value="../announcement-2020/index.html">2020</option>
+					<option value="../announcement-2019/index.html">2019</option>
+                	<option value="../announcement-2018/index.html">2018</option>
+                	<option value="../announcement-2017/index.html">2017</option>
+                	<option value="../announcement-2016/index.html">2016</option>
+				  <option value="https://esd.imi.gov.my/portal/latest-news/announcement-2015/" selected="selected">2015</option>
+				  <!-- <option value="2014">2014</option>
+				  <option value="2013">2013</option> -->
+				</select>
+			</div>
+			<ul class="list-wraper">
+                            <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXPATS CENTRE HALF DAY CLOSURE ON 31 DECEMBER 2015</h1>
+                        <p>29 December 2015</p>
+						<p>In conjunction with New Year's Eve on Thursday, 31 December 2015, please be informed that MYXpats Centre including Immigration Services operating hours will be until 2:30pm. We will be closed on Friday, 1 January 2016 (New Year's Day). <br></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-centre-half-day-closure-on-31-december-2015/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">List of Services in MYXpats Centre</h1>
+                        <p>30 November 2015</p>
+						<p>Effective 1st December 2015, the following services are available at MYXpats Centre</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="list-of-services-in-myxpats-centre/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">New Requirement for Company Registration Process Effective 15 November 2015</h1>
+                        <p>16 November 2015</p>
+						<p>Starting 15 November 2015, all newly created account for the&nbsp; company registration with Expatriate Services Division (ESD) is required to purchase their company info from Suruhanjaya Syarikat Malaysia (SSM) through the ESD system.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="new-requirement-for-company-registration-process-effective-15-november-2015/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">Projection of Expatriates for Year 2016 Opens on 15 November 2015</h1>
+                        <p>15 November 2015</p>
+						<p>Please be informed that companies successfully registered with ESD may apply for projection of expatriates for year 2016 starting 15 November 2015.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="projection-of-expatriates-for-year-2016-opens-on-15-november-2015/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">PERMISSION TO UNDERTAKE INTERNATIONAL STUDENTS MOBILITY PROGRAM  UNDER SOCIAL VISIT PASS</h1>
+                        <p>09 November 2015</p>
+						<p>Companies successfully registered with ESD will now be able to apply for permission to undertake international students mobility program under Social Visit Pass (SVP) through the ESD system effective 9th November 2015.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="permission-to-undertake-international-students-mobility-program-under-social-visit-pass/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">Social Visit Pass (SVP) - Internship for University Students</h1>
+                        <p>20 October 2015</p>
+						<p>Coming soon in November 2015, companies that have successfully 
+registered with ESD will be able to apply for a short term internship 
+(up to 3 months) for students from overseas universities to do 
+internship in Malaysia.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="social-visit-pass-internship-for-university-students/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXpats Centre Training - Service Disruption on 7 Aug 2015</h1>
+                        <p>04 August 2015</p>
+						<p>We wish to inform you that in view of the above event, MYXpats Centre will be closed half day from 12.00 noon to 5.00pm on 7th August, 2015 (Friday).<br></p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-centre-training-service-disruption-on-7-aug-2015/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">KPDNKK Notice on Wholesale & Retail Trade (WRT) Sector</h1>
+                        <p>04 August 2015</p>
+						<p>KPDNKK hereby to confirm that for the application under the Wholesale Retail Trade-WRT (which includes the unregulated services sector) is governed under the Guidelines on Foreign Participation in the Distributive Trade Services Malaysia (2010).</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="kpdnkk/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MYXpats Centre Hari Raya Aidilfitri Operating Hours</h1>
+                        <p>10 July 2015</p>
+						<p>As Hari Raya is tentatively scheduled to fall on 17 July 2015, we wish 
+to inform everyone that MYXpats Centre will be CLOSED on 16 July until 
+20 July 2015.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="myxpats-centre-hari-raya-aidilfitri-operating-hours/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">Employment Pass Applications For The Construction Sector</h1>
+                        <p>30 June 2015</p>
+						<p>Effective from 15 July 2015, all companies in the construction sector 
+will need to refer all expatriate Employment Pass applications for 
+technical and non-technical posts to the Construction Industry 
+Development Board (CIDB)</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="employment-pass-applications-for-the-construction-sector/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">New Employment Pass (Category III) Available On 15 July 2015</h1>
+                        <p>30 June 2015</p>
+						<p>From 15 July 2015, the Ministry of Home Affairs will implement a 
+reclassification of Employment Pass (Category I and II). A new 
+classification, Employment Pass (Category III), will also be introduced.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="new-employment-pass-category-iii-available-on-15-july/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ANNOUNCEMENT ON NEW VDR ISSUANCE PROCEDURES</h1>
+                        <p>15 June 2015</p>
+						<p>MYXpats Centre is pleased to announce new procedures that will 
+streamline and improve the application process for a Visa With Reference
+ letter, or Visa Dengan Rujukan (VDR), for expatriates and their 
+dependants. These new procedures will come into effect on 1 July 2015.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="announcement-on-new-vdr-issuance-procedures/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">STATEMENT ON AUTHORISED COMPANY REPRESENTATIVES</h1>
+                        <p>01 January 2015</p>
+						<p>Since the announcement of the Malaysia Expatriate Talent Service Centre 
+(MYXpats Centre) was made on 9 May 2015, MYXpats Centre has received a 
+significant amount of enquiries about the centre from employers as well 
+as agents acting on their behalf.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="statement-on-authorised-company-representatives/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MESSAGE FROM THE DIRECTOR GENERAL OF IMMIGRATION MALAYSIA</h1>
+                        <p>06 May 2015</p>
+						<p>The Immigration Department of Malaysia and the Ministry of Home Affairs 
+welcome you to MYXpats Centre, the hub for expatriate Employment Pass 
+services in the Klang Valley.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="message-from-the-director-general-of-immigration-malaysia/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">MESSAGE FROM THE CHIEF EXECUTIVE OFFICER OF TALENTCORP</h1>
+                        <p>06 May 2015</p>
+						<p>On behalf of TalentCorp, it gives me great pleasure to introduce you to MYXpats Centre.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="message-from-the-chief-executive-officer-of-talentcorp/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">ROLL OUT SESSION</h1>
+                        <p>01 January 2015</p>
+						<p>EXPATRIATE SERVICES DIVISION (ESD), IMMIGRATION DEPARTMENT OF MALAYSIA</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="roll-out-session/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE TO ALL FIRMS</h1>
+                        <p>01 January 2015</p>
+						<p>Please be informed that firms (Chartered Accountants, Partnership, Law 
+Firms, etc.) may now start to register the account at the ESD website.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-to-all-firms/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE OF PROFESSIONAL VISIT PASS APPLICATION</h1>
+                        <p>01 January 2015</p>
+						<p>Please be informed that all submissions for Professional Visit Pass 
+(PVP) - Experts Category application at Visa, Pass and Permit Division 
+will not be entertained starting 26 September 2014.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-of-professional-visit-pass-application/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE OF RENEWAL OF EMPLOYMENT PASS</h1>
+                        <p>01 January 2015</p>
+						<p>Please be informed that effective 1 October 2014, all submissions for 
+Renewal of Employment Pass can now be submitted online for companies 
+that are successfully registered with ESD</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-of-renewal-of-employment-pass/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE OF DEPENDENT APPLICATION</h1>
+                        <p>01 January 2015</p>
+						<p>Effective 3 July 2014, successful companies registered and approved 
+through the online ESD system can apply dependent(s) together with 
+expatriate application via the ESD online system *.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-of-dependent-application/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE OF ESD CLOSURE</h1>
+                        <p>01 January 2015</p>
+						<p>Please be informed that ALL COUNTER TRANSACTION at Expatriate Services 
+Division (ESD) will be CLOSED for ONE (1) DAY on 19 JUNE 2014 (Thursday)
+ for internal upgrading.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-of-esd-closure/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE TO ALL COMPANIES</h1>
+                        <p>01 January 2015</p>
+						<p>Please take note that immigration department of malaysia is launching a 
+new system at the Expatriate Services Division (ESD). The implementation
+ of this system will be launched in phases according to the sectors.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-to-all-companies-third-phase/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE TO ALL COMPANIES</h1>
+                        <p>01 January 2015</p>
+						<p>Please take note that immigration department of malaysia is launching a 
+new system at the Expatriate Services Division (ESD). The implementation
+ of this system will be launched in phases according to the sectors.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-to-all-companies-second-phase/index.html">read more</a>
+                    				</li>
+                                <li>
+					<div class="desc">
+						<h1 style="text-transform:uppercase;">NOTICE TO ALL COMPANIES IN THE OIL, GAS & ENERGY SECTORS</h1>
+                        <p>01 January 2015</p>
+						<p>Please take note that immigration department of malaysia is launching a new system at the Expatriate Services Division (ESD). The implementation of this system will be launched in phases according to the sectors.</p>
+					</div>
+					<div style="clear: both;"></div>
+                    						<a class="read-more" href="notice-to-all-companies-in-the-oil-gas-energy-sectors/index.html">read more</a>
+                    				</li>
+                			</ul> 
+		</div>
+		<div class="right"> 
+			<div class="top">
+				 <h3>TESTIMONIALS</h3>
+				 <div class="line"></div>
+				 <div class="testimonials-banner">
+				 	  <p>“Thanks to these wonderful neighbours, our culture shock was short-lived.”<a href="../../about-us/testimonials/index.html">read more +</a></p>
+					  <img src="../../images/TESTI11-William-Donald-Duncan.jpg" />
+				 </div>
+			</div>
+			<div class="bottom">
+				
+<h3>F.A.Q</h3>
+<div class="line"></div> 
+<div class="faq-banner">
+
+<div id="faq-container">
+        <p id="title"></p>
+        <p id="desc"></p>
+        <a href="../../faq/index.html">read more +</a>
+    </div>
+
+
+  <script>
+        $(document).ready(function() {
+            
+            function displayFAQs(faqs, index) {
+                var title = faqs[index].title;
+                var desc = faqs[index].desc;
+
+                $('#title').html('<b>Q:<br /> ' + title + '</b></p><br />');
+                $('#desc').html('A:<br />' + desc + '');
+                
+            }
+
+            $.ajax({
+                url: '/portal/include/ajax-faq.php',
+                type: 'GET',
+                dataType: 'json',
+                success: function(response) {
+                    if (response.status === 'success') {
+                        var faqs = response.data;
+                        var index = 0;
+                        var faqCount = faqs.length;
+
+                        
+                        displayFAQs(faqs, index);
+
+                       
+                        var timer = setInterval(function() {
+                            index = (index + 1) % faqCount;
+                            displayFAQs(faqs, index);
+                        }, 5000); 
+                    } else {
+                        $('#faq-container').text('Error: ' + response.message);
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.log(error);
+                }
+            });
+        });
+    </script>
+			</div>
+			<div class="backtop-desktop" style="display: ;">
+				<a href="#0" class="cd-top">Back Top</a>
+			</div>
+		</div>
+		<div style="clear: both;"></div>
+	</div>   
+</div>
+		</div><!-- end content-wrapper -->
+		<div class="footer-wrapper">
+			<div class="left">
+				<div class="backtop" style="display: none;">
+					<a href="#0" class="cd-top">Back Top</a>
+				</div>
+				<div class="copyright">
+					<h1>Expatriate Services Division</h1>
+					<h2>IMMIGRATION DEPARTMENT OF MALAYSIA<br />BAHAGIAN KHIDMAT EKSPATRIAT JABATAN IMIGRESEN MALAYSIA</h2>
+					<small>© 2024 Expatriate Services Division. All Rights Reserved.</small>
+				</div>
+				<div class="bottom-menu">
+					<ul>
+						<li><a class="" href="../../index.html">Home</a></li>
+						<li><a class=""  href="../../about-us/esd/index.html">About Us</a></li>
+						<li><a class="" href="../../employers/index.html">Employers</a></li>
+						<li><a class="" href="../../expatriates/myxpats/index.html">Expatriates</a></li>
+						<li><a class="" href="../news/index.html">Latest News</a></li>
+                        <li><a class="" href="../../faq/index.html">F.A.Q</a></li>
+						<div style="clear: both;"></div>
+					</ul>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="top" style="display:block;">
+					<!-- <li class=""><a href="faq/">F.A.Q</a></li>
+					 <li><a href="#">T&C</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Useful Links</a></li> -->
+				</ul>
+				<!-- <ul class="bottom">
+					<li><a class="fb" href="#"> fb </a></li>
+					<li><a class="twi" href="#"> twi </a></li>
+					<li><a class="in" href="#"> in </a></li>
+					<li><a class="youtube" href="#"> youtube </a></li>
+					<div style="clear: both;"></div>
+				</ul> -->
+			</div>
+			<div style="clear: both;"></div>
+			<p class="mobile-copyright" style="display: none;">© 2024 Expatriate Services Division. All Rights Reserved.</p>
+		</div> 
+	</div> <!-- end main-wrapper -->
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-62607230-1', 'auto');
+	  ga('send', 'pageview');
+	
+	</script>
+</body>
+
+<!-- Mirrored from esd.imi.gov.my/portal/latest-news/announcement-2015/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 10 Aug 2024 14:21:14 GMT -->
+</html>
